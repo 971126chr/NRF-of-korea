@@ -36,7 +36,8 @@ body {
 }
 .border-bottom::after {
     content: "";
-    clear: right;
+    display: block;
+    clear: both;
 }
 .org-round {
     display: inline-block;
@@ -88,25 +89,19 @@ body {
     font-weight: bolder;
 }
 #section {
-    width: 686px;
+    width: 670px;
 }
 .section-top-border {
     background: url("../images/assignment-1-section-x.png") repeat-x top;
-    padding-top: 35px;
+    padding-top: 3px;
+    width: 670px;
 }
-.section-right-border {
-    background: url("../images/assignment-1-section-right-border.png") repeat-y right;
-    padding-right: 25px;
+.section-y-border {
+    background: url("../images/section-border-y.png") center 0 repeat-y;
 }
 .section-bottom-border {
     background: url("../images/assignment-1-section-x.png") repeat-x bottom;
-    padding-bottom: 33px;
-}
-.section-left-border {
-    background: url("../images/assignment-1-section-y-left.png") repeat-y left;
-    /*
-    padding-left: 27px;
-    */
+    padding: 35px 25px 33px;
 }
 #section-2 {
     border: 3px solid #ececec;
@@ -118,11 +113,12 @@ body {
 }
 #section-top {
     display: inline-block;
-    margin-left: 20px;
+    padding: 0 0 0 21px;
 }
 #section-top::after {
     content: "";
-    clear: left;
+    display: block;
+    clear: both;
 }
 #section-logo-2 {
     width: 229px;
@@ -149,13 +145,13 @@ body {
     margin-bottom: 27px;
 }
 .section-right-org {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     color: #f7941e;
 }
 .section-right-p {
     color: #9b9b9b;
-    font-size: 14px;
+    font-size: 12px;
 }
 .org-button,.org-button-round {
     font-size: 11px;
@@ -171,32 +167,39 @@ body {
     margin: 9px 0 0 -1px;
 }
 #section-bottom {
-    margin: 29px 25px 33px 27px;
+    margin-top: 29px;
 }
 .recruitment-procedure {
     padding-bottom: 12px;
     border-bottom: 1px solid #efefef;
-    font-size: 17px;
+    font-size: 18px;
     color: #f7941e;
     font-weight: bold;
 }
 .box-01-05::after {
     content: "";
-    clear: left;
+    display: block;
+    clear: both;
 }
 .box, .box-2 {
     color: #a19f9f;
-    margin-right: 2px;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
-    line-height: 51px;
-    font-weight: bolder;
+    line-height: 50px;
+    font-weight: bold;
     float: left;
 }
 .box {
     background: url("../images/box-shape.png");
     width: 121px;
     height: 51px;
+}
+.box + .box {
+    margin-left: 2px;
+}
+.box-2 {
+    vertical-align: middle;
+    line-height: 43px;
 }
 
     /*
@@ -220,6 +223,15 @@ body {
     height: 45px;
     border: 3px #dfdfdf solid;
 }
+#main-bottom {
+    padding-top: 35px;
+}
+#main-bottom-list {
+    list-style-image: url("../images/list-style-.png");
+    list-style-position: inside;
+    color: #a8a8a8;
+    font-size: 13px;
+}
 
 /*인사관리 section 부분*/
 
@@ -232,7 +244,8 @@ body {
 }
 .section-p-1, .section-p-2, .section-p-3, .section-p-4::after {
     content: "";
-    clear: left;
+    display: block;
+    clear: both;
 }
 .yellow-box,.yellow-box-2,.org-box {
     width: 65px;
@@ -287,7 +300,8 @@ body {
 }
 dl::after {
     content: "";
-    clear: left;
+    display: block;
+    clear: both;
 }
 .dt-style {
     float: left;
@@ -316,7 +330,8 @@ dl::after {
 }
 .tab-head-list::after {
     content: "";
-    clear: left;
+    display: block;
+    clear: both;
 }
 .tab-box-1,.tab-box-2 {
     width: 135px;
