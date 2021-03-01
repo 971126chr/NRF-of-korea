@@ -5,23 +5,18 @@ body {
 }
 #main {
     min-width: 784px;
-    padding: 56px 57px 58px;
 }
 .main-border-top-x {
     background: url("../images/main-border.png") repeat-x top;
-    padding-top: 56px;
+    padding-top: 3px;
 }
-.main-border-right-y {
-    background: url("../images/main-border.png") repeat-y right;
-    padding-right: 57px;
+.main-border-y {
+    background: url("../images/main-border-y.png") repeat-y;
+    padding: 57px;
 }
 .main-border-bottom-x {
     background: url("../images/main-border.png") repeat-x bottom;
-    padding-bottom: 58px;
-}
-.main-border-left-y {
-    background: url("../images/main-border.png") repeat-y left;
-    padding-left: 57px;
+    padding-bottom: 3px;
 }
 #main-2 {
     padding: 62px 60px 53px;
@@ -32,6 +27,7 @@ body {
 }
 #section-header {
     min-width: 670px;
+    padding-bottom: 29px;
 }
 .border-bottom {
     padding-bottom: 4px;
@@ -71,7 +67,7 @@ body {
 }
 .sec-header-p {
     margin-top: 29px;
-    font-size: 18px;
+    font-size: 19px;
 }
 .sec-header-p-2 {
     margin: 34px 0 31px 0;
@@ -92,8 +88,7 @@ body {
     font-weight: bolder;
 }
 #section {
-    padding: 35px 25px 33px 27px;
-    margin-top: 29px;
+    width: 686px;
 }
 .section-top-border {
     background: url("../images/assignment-1-section-x.png") repeat-x top;
@@ -143,7 +138,7 @@ body {
     display: inline-block;
 }
 #section-right {
-    padding: 1px 0 0 27px;
+    padding-left: 27px;
     background: url("../images/section-center-line.png") repeat-y;
     float: left;
 }
