@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/float&clear.css">
+        <title>float 사용 및 해제 연습</title>
+    </head>
+    <body>
+        <h1>float 사용 및 해제 연습</h1>
+        <p><img src="../images/logo-2.png" title="해태음료 영문로고" class="float-right">
+            <b>이미지가 텍스트에서 오른쪽</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+        <p><img src="../images/logo-2.png" title="해태음료 영문로고" class="float-left">
+            <b>이미지가 텍스트에서 왼쪽</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+        <p><img src="../images/logo-2.png" title="해태음료 영문로고" class="float-none">
+            <b>이미지가 텍스트에서 발생되는 위치에 표시</b><br>
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+        <h2>float 사용해서 콘탠츠 한 줄로 정렬하기</h2>
+        <div class="div-float-left">
+            <div class="div-1">div-1</div>
+            <div class="div-2">div-2</div>
+            <div class="div-3">div-3</div>
+        </div>
+        <h2>float 사용 후 clear 사용과 미사용 차이</h2>
+        <h3>float만 (clear 미사용)</h3>
+        <div class="div-1-clear-n">div-1</div>
+        <div class="div-2-clear-n">div-2 html 상 div-2는 div-1의 뒤에 나타난다. div-1에 float left가 작동해 div-1은 왼쪽으로 흐르므로 div-2의 text는 div-1 주위로 흐른다.</div>
+        <h3>clear 사용</h3>
+        <div class="div-1-clear">div-1</div>
+        <div class="div-2-clear">div-2 css로 직접 clear 적용도 가능하지만 하나의 float으로 인해 그 다음에 해당하는 여러개의 콘탠츠에 다 직접 clear를 적어줘야하기 때문에 권장하지 않는 방법이다. ex) div-4에도 clear 적용해줘야 된다.</div>
+        <div class="div-4">div-4</div>
+        <h2>float 해제 6가지 방법</h2>
+        <ol class="clear-list">
+            <li>float된 요소의 부모요소에 강제로 높이 값 지정</li>
+            <li>float된 요소의 부모요소에 overflow: hidden을 적용</li>
+            <li>float된 요소의 부모요소에 overflow: auto를 적용</li>
+            <li>float된 요소의 부모요소에 float 지정</li>
+            <li>float된 요소의 다음에 오는 태그에 clear: both 지정</li>
+            <li class="right-clear">추천! float된 요소의 부모요소에 가상요소(::after 사용)를 만들고 해당 요소에 clear: both 지정</li>
+        </ol>
+        <h2>float 해제 방법의 단점</h2>
+        <ol class="clear-list">
+            <li>반응형 시 자동 높이 값 설정 불가능</li>
+            <li>해당 요소 속 콘탠츠를 박스 외부로 표현 불가 (잘림)</li>
+            <li>특정 브라우저에서는 스크롤 바 나타남</li>
+            <li>가운데 배치가 불가능</li>
+            <li>clear: both가 적용된 요소는 margin-top 적용 불가</li>
+        </ol>
+        <h2 class="right-clear">가상의 엘리먼트 ::after를 생성 후 display: block; 과 clear: both; 를 추가하면 의미 없는 빈 엘리먼트를 사용하지 않으면서 엘리먼트를 사용해 깔끔하게 float이 clear된다.</h2>
+    </body>
+</html>
