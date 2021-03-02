@@ -1,0 +1,44 @@
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.float-none {
+    float: none;
+}
+.div-float-left::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.div-1,.div-2,.div-3,.div-1-clear-n,.div-1-clear,.div-2-clear {
+    padding: 10px;
+    float: left;
+}
+.div-1,.div-1-clear-n,.div-1-clear {
+    border: 3px solid red;
+}
+.div-2,.div-2-clear-n,.div-2-clear {
+    border: 3px solid orange;
+}
+.div-2-clear {
+    clear: both;
+}
+.div-3 {
+    border: 3px solid green;
+}
+.div-4 {
+    border: 3px solid purple;
+    /*
+    직접 clear 해주면 이렇게 하나씩 적어줘야함
+    clear: both;
+    */
+}
+.clear-list {
+    font-size: 20px;
+}
+.right-clear {
+    color: red;
+    font-weight: bold;
+}
