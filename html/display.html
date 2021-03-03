@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>display 예제 및 공부</title>
+    </head>
+    <body>
+        <h1>Display 속성</h1>
+        <h2>box-model 계열</h2>
+        <h3>block</h3>
+            <p>콘탠츠를 block 요소로 만들어줌. 항상 줄바꿈 되고 전체 너비 차지함</p>
+            <p>width & height 지정 가능</p>
+            <p>div, h1~h6, p, form, header, footer, section,ul, li 등 존재</p>
+        <h3>inline</h3>
+            <p>콘탠츠를 inline 요소로 만들어줌. 콘탠츠 크기만큼만 자리 차지함. 줄바꿈 없음</p>
+            <p>크기가 정해져 있어, width & height 값 지정 불가</p>
+            <p>span, a, img, button 등 존재</p>
+        <h3>inline-block</h3>
+            <p>콘탠츠가 inline 이면서 block이 됨. 다른 요소들과 같은 줄에 있을 수 있지만 블럭요소임.</p>
+            <p>width & height 지정 가능</p>
+        <h2>list 계열</h2>
+            <h3>list-item</h3>
+            <p>list가 아닌 태그를 list처럼 바꿔줌, li 태그를 쓰지 않았지만 list같은 레이아웃에 사용</p>
+            <p>이 속성을 쓴 태그는 li 태그처럼 list-style-type, list-style-position, list-style-image 속성을 이용할 수 있다</p>
+        <h2>Table 계열</h2>
+            <h3>Table (html 상 table 태그)</h3>
+                <p>요소가 block 형식의 table을 나타내도록 바꿔줌</p>
+            <h3>inline-table (html 상 table 태그)</h3>
+                <p>요소가 inline 형식의 table을 나타내도록 바꿔줌</p>
+            <h3>table-row-group (html 상 tbody 태그)</h3>
+                <p>요소가 행(가로줄)을 그룹화하도록 정해줌</p>
+            <h3>table-header-group (html 상 thead 태그)</h3>
+                <p>table 상 header에 해당하는 행을 그룹화해줌<br>
+                    table-header-group이 있는 여러 요소가 포함된 경우 첫번째 요소만 header로 렌더링되고 나머지는 table-row-group으로 처리됨</p>
+            <h3>table-footer-group (html 상 tfoot 태그)</h3>
+                <p>table 상 footer에 해당하는 행을 그룹화해줌<br>
+                    table-footer-group이 있는 여러 요소가 포함된 경우 첫번째 요소만 footer로 렌더링되고 나머지는 table-row-group으로 처리됨</p>
+            <h3>table-row (html 상 tr 태그)</h3>
+                <p>요소가 하나의 행(가로줄) 임을 나타냄</p>
+            <h3>table-column-group (html 상 colgroup 태그)</h3>
+                <p>요소가 열 (세로줄)을 그룹화하게 나타냄</p>
+            <h3>table-column (html 상 col)</h3>
+                <p>요소가 하나의 셀의 열을 설명하도록 나타냄</p>
+            <h3>table-cell (html 상 td, th 태그)</h3>
+                <p>요소가 테이블 셀을 나타내도록 함</p>
+            <h3>table-caption (html 상 caption 태그)</h3>
+                <p>table의 caption을 지정. 즉 표를 설명해주는 제목이 나타남</p>
+        <h2>기타</h2>
+            <h3>none</h3>
+                <p>해당 요소와 그의 자식 요소를 레이아웃에서 사라지게 만듦</p>
+            <h3>inherit</h3>
+                <p>부모 요소의 display 속성을 그대로 따르게 됨</p>
+    </body>
+</html>

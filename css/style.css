@@ -11,12 +11,13 @@ body {
     background: url("../images/main-border-y.png") repeat-y;
     padding: 57px;
 }
+.main-border-y-2 {
+    background: url("../images/main-border-y.png") repeat-y;
+    padding: 62px 60px 53px;
+}
 .main-border-bottom-x {
     background: url("../images/main-border.png") repeat-x bottom;
     padding-bottom: 3px;
-}
-#main-2 {
-    padding: 62px 60px 53px;
 }
 #main-3 {
     min-width: 791px;
@@ -25,12 +26,17 @@ body {
 #section-header {
     min-width: 670px;
 }
-.border-bottom {
-    padding-bottom: 4px;
+.border-bottom,.border-bottom-2 {
     background: url("../images/section-header-border-bottom.png") repeat-x;
     background-position: bottom;
 }
-.border-bottom::after {
+.border-bottom {
+    padding-bottom: 4px;
+}
+.border-bottom-2 {
+    padding-bottom: 8px;
+}
+.border-bottom,.border-bottom-2::after {
     content: "";
     display: block;
     clear: both;
@@ -66,11 +72,6 @@ body {
     margin-top: 29px;
     font-size: 19px;
 }
-.sec-header-p-2 {
-    margin: 34px 0 31px 0;
-    font-size: 14px;
-    color: #b4b4b4;
-}
 .section-header-p {
     margin-top: 28px;
     line-height: 22px;
@@ -88,15 +89,20 @@ body {
     color: #9b9b9b;
     font-size: 11px;
 }
-.section-top-border {
-    background: url("../images/assignment-1-section-x.png") repeat-x top;
+.section-top-border,.section-top-border-2 {
     padding-top: 3px;
     width: 670px;
+}
+.section-top-border {
+    background: url("../images/assignment-1-section-x.png") repeat-x top;
+}
+.section-top-border-2 {
+    background: url("../images/assingment-3-section-top-org.png") repeat-x top;
 }
 .section-y-border {
     background: url("../images/section-border-y.png") center 0 repeat-y;
 }
-.section-bottom-border,.section-bottom-border-2 {
+.section-bottom-border,.section-bottom-border-2,.section-bottom-border-3 {
     background: url("../images/assignment-1-section-x.png") repeat-x bottom;
 }
 .section-bottom-border {
@@ -104,6 +110,9 @@ body {
 }
 .section-bottom-border-2 {
     padding: 30px 21px 30px 19px;
+}
+.section-bottom-border-3 {
+    padding: 20px 18px 63px 21px;
 }
 #section-top {
     display: inline-block;
@@ -305,6 +314,16 @@ body {
 
 /*실전지침 section*/
 
+#container {
+    margin-top: 31px;
+}
+.sec-header-p-2 {
+    margin-top: 34px;
+    font-size: 14px;
+    color: #b4b4b4;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+}
 #tab-head-area {
     width: 271px;
     height: 29px;
@@ -348,37 +367,42 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
-#section-3 {
-    max-width: 664px;
-    border: 3px solid #ececec;
-    padding: 20px 18px 63px 21px;
-}
 .section-h2-border {
     padding-bottom: 8px;
 }
 .section-h2,.section-h2-2 {
     color: #949494;
     font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 8px;
 }
 .section-h2-2 {
-    margin: 22px 0 8px;
+    margin-top: 22px;
 }
 .section-box,.section-box-2 {
-    width: 622px;
-    height: 41px;
+    width: 602px;
     background: #f4f4f4;
+    padding-left: 20px;
+}
+.section-box {
     margin-top: 16px;
+}
+.section-box-2 {
+    margin-top: 18px;
 }
 .section-box-list {
     counter-reset: item;
     list-style-type: none;
+    font-size: 14px;
+    padding: 14px 0;
+    letter-spacing: -0.05em;
+}
+.section-box-list::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 .section-box-listnum {
     color: #9b9b9b;
     font-size: 14px;
-    padding: 14px 8.5px 0;
     float: left;
 }
 .section-box-listnum::before {
@@ -388,9 +412,9 @@ body {
     color: #ff8416;
     font-weight: bold;
 }
-.section-box-2 {
-    width: 622px;
-    height: 73px;
+.section-box-listnum:not(:first-child) {
+    padding-left: 8.5px;
+    padding-right: 8.5px;
 }
 #description {
     max-width: 624px;
@@ -423,6 +447,7 @@ body {
 }
 
 /*인재상 section*/
+
 #container-2 {
     padding-top: 36px; 
 }
