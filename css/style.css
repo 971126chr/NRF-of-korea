@@ -524,6 +524,14 @@ body {
 .circle-bottom-p-2 {
     font-size: 12.93px;
 }
+.button-orange {
+    display: inline-block;
+    background: url("../images/index-4-org-button.png");
+    width: 120px;
+    height: 36px;
+    border: 0px;
+    ;
+}
 .org-button-round {
     width: 118px;
     height: 34px;
