@@ -19,6 +19,10 @@ body {
     background: url("../images/main-border-y.png") repeat-y;
     padding: 72px 60px 158px;
 }
+.main-border-y-4 {
+    background: url("../images/main-border-y.png") repeat-y;
+    padding: 60px 60px 119px;
+}
 .main-border-bottom-x {
     background: url("../images/main-border.png") repeat-x bottom;
     padding-bottom: 3px;
@@ -26,7 +30,7 @@ body {
 #section-header {
     min-width: 670px;
 }
-.border-bottom,.border-bottom-2 {
+.border-bottom,.border-bottom-2,.border-bottom-3 {
     background: url("../images/section-header-border-bottom.png") repeat-x;
     background-position: bottom;
 }
@@ -527,6 +531,7 @@ body {
 .button-position {
     position: absolute;
     bottom: 0;
+    left: 194px;
 }
 .index-4-org-button,.index-4-white-button {
     display: inline-block;
@@ -535,4 +540,47 @@ body {
     */
     border: 0;
     background: none;
+}
+
+/*회원가입*/
+
+.org-round-2 {
+    display: inline-block;
+    background: url("../images/org-round.png") no-repeat;
+    padding-left: 28px;
+}
+.sign-up {
+    display: inline-block;
+    font-size: 18px;
+}
+.section-h2-next-text {
+    display: inline-block;
+    margin-right: 141px;
+    /*156px*/
+    color: #8f8f8f;
+    font-size: 13px;
+}
+.border-bottom-3 {
+    padding-bottom: 10px;
+}
+.sec-header-p-4 {
+    margin-top: 20px;
+    color: #8f8f8f;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.05em;
+}
+#section-2 {
+    margin-top: 35px;
+}
+.gray-org-box-list::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.gray-org-box {
+    float: left;
+}
+#container-3 {
+    margin-top: 43px;
 }
