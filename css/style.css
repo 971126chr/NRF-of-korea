@@ -17,7 +17,7 @@ body {
 }
 .main-border-y-3 {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 72px 60px 178px;
+    padding: 72px 60px 158px;
 }
 .main-border-bottom-x {
     background: url("../images/main-border.png") repeat-x bottom;
@@ -473,9 +473,9 @@ body {
 
 #container-2 {
     width: 670px;
-    height: 452px;
+    min-height: 507px;
     margin-top: 32px;
-    background: url("../images/index-4-section-bg.png");
+    background: url("../images/index-4-section-bg.png") no-repeat;
     position: relative;
 }
 .section-top-left,.section-top-right,.section-bottom-left,.section-bottom-right {
@@ -491,12 +491,12 @@ body {
     right: 20px;
 }
 .section-bottom-left {
-    bottom: 44px;
+    bottom: 95px;
     left: 15px;
 }
 .section-bottom-right {
-    bottom: 44px;
-    right: 12px;
+    bottom: 99px;
+    right: 9px;
 }
 .circle-top-org-text,.circle-top-org-text-2 {
     color: #ff8c25;
@@ -524,41 +524,15 @@ body {
 .circle-bottom-p-2 {
     font-size: 12.93px;
 }
-.button-orange {
+.button-position {
+    position: absolute;
+    bottom: 0;
+}
+.index-4-org-button,.index-4-white-button {
     display: inline-block;
-    background: url("../images/index-4-org-button.png");
-    width: 120px;
-    height: 36px;
-    border: 0px;
-    ;
-}
-.org-button-round {
-    width: 118px;
-    height: 34px;
-    position: relative;
-    bottom: 370px;
-    left: 210px;
-}
-.org-button-img {
-    position: relative;
-    bottom: 370px;
-    left: 98px;
-}
-.white-button-round {
-    width: 154px;
-    height: 32px;
-    font-size: 11px;
-    background: white;
-    color: #ff9500;
-    border: 1px solid #d3d3d3;
-    border-radius: 3px;
-    box-shadow: 2px 2px #d6d6d6;
-    position: relative;
-    bottom: 370px;
-    left: 190px;
-}
-.white-button-img {
-    position: relative;
-    bottom: 370px;
-    left: 45px;
+    /*
+    font-size: 0;
+    */
+    border: 0;
+    background: none;
 }
