@@ -30,7 +30,7 @@ body {
 #section-header {
     min-width: 670px;
 }
-.border-bottom,.border-bottom-2,.border-bottom-3 {
+.border-bottom,.border-bottom-2,.border-bottom-3,.border-bottom-agree-form {
     background: url("../images/section-header-border-bottom.png") repeat-x;
     background-position: bottom;
 }
@@ -39,6 +39,9 @@ body {
 }
 .border-bottom-2 {
     padding-bottom: 8px;
+}
+.border-bottom-agree-form {
+    padding-bottom: 7px;
 }
 .border-bottom,.border-bottom-2::after {
     content: "";
@@ -109,7 +112,10 @@ body {
     background: url("../images/assingment-3-section-top-org.png") repeat-x top;
 }
 .section-y-border {
-    background: url("../images/section-border-y.png") center 0 repeat-y;
+    background: url("../images/section-border-y.png") repeat-y;
+}
+.section-y-border-2 {
+    background: url("../images/index-5-form-box-y-border.png") repeat-y;
 }
 .section-bottom-border,.section-bottom-border-2,.section-bottom-border-3 {
     background: url("../images/assignment-1-section-x.png") repeat-x bottom;
@@ -583,4 +589,20 @@ body {
 }
 #container-3 {
     margin-top: 43px;
+}
+.agree {
+    height: 243px;
+    padding: 23px 20px 10px 19px;
+}
+.agree-form-title {
+    font-size: 15px;
+    color: #f7941e;
+    letter-spacing: -0.05em;
+}
+.agree-form-p {
+    color: #949494;
+    font-size: 11px;
+    line-height: 18px;
+    margin-top: 20px;
+    overflow-y: scroll;
 }
