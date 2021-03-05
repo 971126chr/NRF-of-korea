@@ -101,11 +101,11 @@ body {
     color: #9b9b9b;
     font-size: 11px;
 }
-.section-top-border,.section-top-border-2 {
+.section-top-border,.section-top-border-2,.section-top-border-3 {
     padding-top: 3px;
     width: 670px;
 }
-.section-top-border {
+.section-top-border,.section-top-border-3 {
     background: url("../images/assignment-1-section-x.png") repeat-x top;
 }
 .section-top-border-2 {
@@ -591,18 +591,63 @@ body {
     margin-top: 43px;
 }
 .agree {
-    height: 243px;
     padding: 23px 20px 10px 19px;
+}
+.agree-2 {
+    padding: 22px 19px 10px;
 }
 .agree-form-title {
     font-size: 15px;
     color: #f7941e;
     letter-spacing: -0.05em;
 }
-.agree-form-p {
+.agree-form-p,.agree-form-p-2 {
     color: #949494;
     font-size: 11px;
     line-height: 18px;
     margin-top: 20px;
     overflow-y: scroll;
+}
+.agree-form-p {
+    height: 161px;
+}
+.agree-form-p-2 {
+    height: 178px;
+}
+.checkbox {
+    height: 25px;
+    line-height: 25px;
+    background: #ececec;
+    color: #949494;
+    font-size: 11px;
+    text-align: right;
+    padding-right: 12px;
+}
+/*
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+.checkbox input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 25px;
+    vertical-align: middle;
+    border: 1px solid #959595;
+    background: white;
+    text-align: center;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+    content: "\2714";
+    color: #959595;
+}
+*/
+.section-top-border-3 {
+    margin-top: 23px;
+}
+.ok-cancel {
+    position: relative;
+    top: 29px;
+    left: 251px;
 }
