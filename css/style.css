@@ -56,16 +56,20 @@ body {
 .recruitment-guide-text, .HRM {
     display: inline-block;
     font-size: 20px;
+    line-height: 18.58px;
+    letter-spacing: -0.025em;
 }
 .text-grey-org {
     display: block;
     float: right;
     font-size: 11px;
+    letter-spacing: -0.025em;
+    margin-top: 3px;
 }
 .text-grey-org-a {
     width: 53px;
     height: 10px;
-    margin-right: 5px;
+    padding: 0 5px 0 4px;
     text-decoration: none;
     background: url("../images/&gt.png") no-repeat right;
 }
@@ -74,10 +78,13 @@ body {
 }
 .text-org {
     color: #f7941e;
+    padding-left: 5px;
 }
 .sec-header-p {
     margin-top: 29px;
     font-size: 19px;
+    letter-spacing: -0.025em;
+    white-space: nowrap;
 }
 .sec-header-p-3 {
     margin-top: 32px;
@@ -147,6 +154,7 @@ body {
     padding-top: 133px;
     color: #9b9b9b;
     font-size: 15px;
+    line-height: 19px;
 }
 .logo-2.logo-2-bottom {
     display: inline-block;
@@ -157,19 +165,21 @@ body {
     float: left;
 }
 .section-right-1 {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 }
 .section-right-2 {
-    margin-bottom: 27px;
+    margin-bottom: 19px;
 }
 .section-right-org {
     font-size: 13px;
+    line-height: 22px;
     font-weight: bold;
     color: #f7941e;
 }
 .section-right-p {
     color: #9b9b9b;
     font-size: 12px;
+    line-height: 22px;
 }
 .org-button,.org-button-round {
     font-size: 11px;
