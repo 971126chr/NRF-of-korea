@@ -1,0 +1,50 @@
+h2,h3 {
+    background: yellow;
+}
+.ex1,.ex2,.ex3,.ex4 {
+    background: red;
+    height: 45px;
+    color: white;
+}
+.ex1 {
+    display: block;
+}
+.ex2 {
+    display: inline;
+}
+.ex3 {
+    display: inline-block;
+}
+.ex4 {
+    display: none;
+}
+.fake-list {
+    display: list-item;
+    list-style-position: inside;
+    background: red;
+    color: white;
+}
+.jb-table,.jb-table-row,.jb-table-cell,.jb-top,.jb-middle,.jb-bottom {
+    border: 1px solid #bcbcbc;
+  }
+  .jb-table {
+    display: table;
+    width: 100%;
+  }
+  .jb-table-row {
+    display: table-row;
+  }
+  .jb-table-cell {
+    display: table-cell;
+    padding: 0px 20px;
+    height: 150px;
+  }
+  .jb-top {
+    vertical-align: top;
+  }
+  .jb-middle {
+    vertical-align: middle;
+  }
+  .jb-bottom {
+    vertical-align: bottom;
+  }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/display.css">
         <title>display 예제 및 공부</title>
     </head>
     <body>
@@ -11,18 +12,57 @@
             <p>콘탠츠를 block 요소로 만들어줌. 항상 줄바꿈 되고 전체 너비 차지함</p>
             <p>width & height 지정 가능</p>
             <p>div, h1~h6, p, form, header, footer, section,ul, li 등 존재</p>
+            ==&gt;<strong>예제</strong>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+                </div>
         <h3>inline</h3>
             <p>콘탠츠를 inline 요소로 만들어줌. 콘탠츠 크기만큼만 자리 차지함. 줄바꿈 없음</p>
             <p>크기가 정해져 있어, width & height 값 지정 불가</p>
             <p>span, a, img, button 등 존재</p>
+            ==&gt;<strong>예제</strong>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+                </div>
         <h3>inline-block</h3>
             <p>콘탠츠가 inline 이면서 block이 됨. 다른 요소들과 같은 줄에 있을 수 있지만 블럭요소임.</p>
             <p>width & height 지정 가능</p>
+            ==&gt;<strong>예제</strong>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+                </div>
         <h2>list 계열</h2>
             <h3>list-item</h3>
             <p>list가 아닌 태그를 list처럼 바꿔줌, li 태그를 쓰지 않았지만 list같은 레이아웃에 사용</p>
             <p>이 속성을 쓴 태그는 li 태그처럼 list-style-type, list-style-position, list-style-image 속성을 이용할 수 있다</p>
+            ==&gt;<strong>예제</strong>
+            <div class="fake-list">I will display as a list item</div>
         <h2>Table 계열</h2>
+        ===&gt;<strong>예제-display: table, table-cell, table-row 사용</strong>
+        <div class="jb-table">
+            <div class="jb-table-row">
+              <div class="jb-table-cell">
+                <p>Lorem</p>
+              </div>
+              <div class="jb-table-cell">
+                <p>Ipsum</p>
+              </div>
+              <div class="jb-table-cell">
+                <p>Dolor</p>
+              </div>
+            </div>
+            <div class="jb-table-row">
+              <div class="jb-table-cell jb-top">
+                <p>Lorem</p>
+              </div>
+              <div class="jb-table-cell jb-middle">
+                <p>Ipsum</p>
+              </div>
+              <div class="jb-table-cell jb-bottom">
+                <p>Dolor</p>
+              </div>
+            </div>
+          </div>
             <h3>Table (html 상 table 태그)</h3>
                 <p>요소가 block 형식의 table을 나타내도록 바꿔줌</p>
             <h3>inline-table (html 상 table 태그)</h3>
@@ -48,6 +88,10 @@
         <h2>기타</h2>
             <h3>none</h3>
                 <p>해당 요소와 그의 자식 요소를 레이아웃에서 사라지게 만듦</p>
+                ==&gt;<strong>예제</strong>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+                    </div>
             <h3>inherit</h3>
                 <p>부모 요소의 display 속성을 그대로 따르게 됨</p>
     </body>
