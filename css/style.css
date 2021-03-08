@@ -4,12 +4,12 @@ body {
     box-sizing: border-box;
 }
 .main-border-top-x {
-    background: url("../images/main-border.png") repeat-x top;
+    background: url("../images/main-border-radius-top.png") no-repeat top;
     padding-top: 3px;
 }
 .main-border-y {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 57px;
+    padding: 57px 57px 57px 60px;
 }
 .main-border-y-2 {
     background: url("../images/main-border-y.png") repeat-y;
@@ -24,7 +24,7 @@ body {
     padding: 60px 60px 119px;
 }
 .main-border-bottom-x {
-    background: url("../images/main-border.png") repeat-x bottom;
+    background: url("../images/main-border-radius-bottom.png") no-repeat bottom;
     padding-bottom: 3px;
 }
 .section-header {
@@ -128,7 +128,7 @@ body {
     background: url("../images/assignment-1-section-x.png") repeat-x bottom;
 }
 .section-bottom-border {
-    padding: 35px 25px 33px 29px;
+    padding: 35px 25px 34px 29px;
 }
 .section-bottom-border-2 {
     padding: 30px 21px 30px 19px;
@@ -194,14 +194,17 @@ body {
     border: none;
 }
 .section-bottom {
-    margin-top: 29px;
+    margin: 26px 0 0 2px;
 }
 .recruitment-procedure {
     padding-bottom: 12px;
     border-bottom: 1px solid #efefef;
     font-size: 18px;
     color: #f7941e;
-    font-weight: bold;
+    letter-spacing: -2px;
+}
+.box-01-05 {
+    margin-top: 15px;
 }
 .box-01-05::after {
     content: "";
@@ -214,10 +217,11 @@ body {
     text-align: center;
     line-height: 50px;
     font-weight: bold;
+    letter-spacing: -2.5px;
     float: left;
 }
 .box {
-    background: url("../images/box-shape.png");
+    background: url("../images/box-shape.png") no-repeat;
     width: 121px;
     height: 51px;
 }
@@ -233,14 +237,30 @@ body {
     height: 45px;
     border: 3px #dfdfdf solid;
 }
+.box:nth-child(3) {
+    padding-right: 2px;
+}
+.box:nth-child(4) {
+    padding-right: 4px;
+}
+.list-style-text {
+    margin-right: 5px;
+}
+.list-style-text-2 {
+    margin-right: 7px;
+}
+.list-style-text,.list-style-text-2 {
+    padding-bottom: 3px;
+}
 .main-bottom {
-    padding-top: 35px;
+    margin: 36px 0 0 31px;
 }
 .main-bottom-list {
     list-style-image: url("../images/list-style-.png");
     list-style-position: inside;
     color: #a8a8a8;
     font-size: 13px;
+    line-height: 18px;
 }
 
 /*인사관리 section 부분*/
