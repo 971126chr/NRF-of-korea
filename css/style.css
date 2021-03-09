@@ -57,13 +57,16 @@ body {
     background: url("../images/org-round.png") no-repeat;
     padding-left: 27px;
 }
-.recruitment-guide-text, .HRM {
+.recruitment-guide-text,.HRM,.recruitment-guide-text-2 {
     display: inline-block;
     font-size: 20px;
     line-height: 18.58px;
 }
 .recruitment-guide-text {
     letter-spacing: -0.025em;
+}
+.recruitment-guide-text-2 {
+    letter-spacing: -2px;
 }
 .HRM {
     letter-spacing: -2px;
@@ -358,17 +361,17 @@ body {
 
 /*실전지침 section*/
 
-#container {
-    margin-top: 31px;
+.container {
+    margin-top: 29px;
 }
 .sec-header-p-2 {
-    margin-top: 34px;
+    margin-top: 30px;
     font-size: 14px;
     color: #b4b4b4;
     line-height: 19px;
-    letter-spacing: -0.05em;
+    letter-spacing: -2px;
 }
-#tab-head-area {
+.tab-head-area {
     width: 271px;
     height: 29px;
 }
@@ -403,6 +406,7 @@ body {
 .tab-box-text {
     color: white;
     font-size: 15px;
+    letter-spacing: -1.5px;
     text-decoration: none;
 }
 .section-h2-border {
@@ -411,12 +415,12 @@ body {
 .section-h2,.section-h2-2 {
     color: #949494;
     font-size: 15px;
+    letter-spacing: -2px;
 }
 .section-h2-2 {
-    margin-top: 22px;
+    margin: 19px 0 0 -1px;
 }
 .section-box,.section-box-2 {
-    width: 602px;
     background: #f4f4f4;
 }
 .section-box {
@@ -435,16 +439,16 @@ body {
     clear: both;
 }
 .section-box-list {
-    padding: 14px 21px 14px 20px;
+    padding: 11px 21px 14px 24px;
 }
 .section-box-list-2 {
-    padding: 20px 22px 20px 20px;
+    padding: 17px 22px 20px 22px;
 }
 .section-box-listnum,.section-box-listnum-br {
     color: #9b9b9b;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: -0.05em;
+    letter-spacing: -2px;
     float: left;
 }
 .section-box-listnum-br {
@@ -464,9 +468,11 @@ body {
     color: #ff8416;
     font-weight: bold;
 }
-.section-box-listnum:not(:last-child) {
-    margin-right: 13px;
-    /*36px*/
+.section-box-list>.section-box-listnum:nth-child(odd) {
+    margin-right: 39px;
+}
+.section-box-list>.section-box-listnum:nth-child(2) {
+    margin-right: 37px;
 }
 .list-margin-01-03>.section-box-listnum:nth-child(odd) {
     margin-right: 65px;
@@ -483,7 +489,7 @@ body {
     margin-right: 57px;
     /*92px*/
 }
-#description {
+.description {
     max-width: 624px;
     margin-top: 22px;
     color: #949494;
