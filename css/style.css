@@ -21,7 +21,7 @@ body {
 }
 .main-border-y-3 {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 72px 60px 158px;
+    padding: 72px 60px 176px;
 }
 .main-border-y-4 {
     background: url("../images/main-border-y.png") repeat-y;
@@ -76,7 +76,7 @@ body {
     float: right;
     font-size: 11px;
     letter-spacing: -0.025em;
-    margin-top: 3px;
+    margin-top: -1px;
 }
 .text-grey-org-a {
     width: 53px;
@@ -101,7 +101,7 @@ body {
 .sec-header-p-3 {
     margin-top: 32px;
     font-size: 19px;
-    letter-spacing: -0.025em;
+    letter-spacing: -2.3px;
 }
 .section-header-p {
     margin-top: 25px;
@@ -474,39 +474,53 @@ body {
 .section-box-list>.section-box-listnum:nth-child(2) {
     margin-right: 37px;
 }
-.list-margin-01-03>.section-box-listnum:nth-child(odd) {
-    margin-right: 65px;
+.list-margin-01-03>.section-box-listnum:nth-child(1) {
+    margin-right: 68px;
 }
 .list-margin-01-03>.section-box-listnum:nth-child(2) {
-    margin-right: 80px;
-    /*135px*/
-}
-.list-margin-04-06>.section-box-listnum:nth-child(2) {
-    margin-right: 65px;
-    /*97px*/
+    margin-right: 137px;
 }
 .section-box-listnum-br {
-    margin-right: 57px;
-    /*92px*/
+    margin-right: 94px;
+}
+.list-margin-04-06>.section-box-listnum:nth-child(2) {
+    margin-right: 99px;
 }
 .description {
     max-width: 624px;
-    margin-top: 22px;
+    margin-top: 20px;
+    padding-left: 2px;
     color: #949494;
     font-size: 11px;
 }
-.description-title,.description-small-title,.description-org-title {
+.description-title,.description-org-title {
+    margin-top: 21px;
+}
+.description-org-title-2 {
+    margin-top: 17px;
+}
+.description-title-2 {
+    margin-top: 19px;
+}
+.description-small-title {
     margin-top: 22px;
 }
+.description-small-title {
+    padding-left: 4px;
+}
+.description-small-title-2 {
+    margin: 16px 0 0 3px;
+}
 .description-section {
-    padding-left: 8px;
+    padding: 3px 0 0 12px;
     line-height: 16px;
+    letter-spacing: -0.6px;
 }
 .description-list {
     font-size: 11px;
     list-style: upper-roman inside;
 }
-.description-org-title {
+.description-org-title,.description-org-title-2 {
     color: #ff9501;
 }
 .description-small-list {
@@ -516,10 +530,10 @@ body {
 
 /*인재상 section*/
 
-#container-2 {
+.container-2 {
     width: 670px;
     min-height: 507px;
-    margin-top: 32px;
+    margin-top: 34px;
     background: url("../images/index-4-section-bg.png") no-repeat;
     position: relative;
 }
@@ -528,30 +542,30 @@ body {
     position: absolute;
 }
 .section-top-left {
-    top: 38px;
-    left: 20px;
+    top: 34px;
+    left: 17px;
 }
 .section-top-right {
-    top: 38px;
+    top: 34px;
     right: 20px;
 }
 .section-bottom-left {
-    bottom: 95px;
-    left: 15px;
+    bottom: 103px;
+    left: 18px;
 }
 .section-bottom-right {
-    bottom: 99px;
-    right: 9px;
+    bottom: 103px;
+    right: 13px;
 }
 .circle-top-org-text,.circle-top-org-text-2 {
     color: #ff8c25;
     font-size: 17.5px;
 }
 .circle-top-org-text {
-    letter-spacing: -0.05em;
+    letter-spacing: -2px;
 }
 .circle-top-org-text-2 {
-    letter-spacing: -0.075em;
+    letter-spacing: -2px;
 }
 .org-line {
     border: 1px solid #ff8c25;
@@ -560,7 +574,7 @@ body {
 }
 .circle-bottom-p,.circle-bottom-p-2 {
     color: #8a8a8a;
-    letter-spacing: -0.05em;
+    letter-spacing: -1px;
     margin-top: 13px;
 }
 .circle-bottom-p {
@@ -593,26 +607,26 @@ body {
 .sign-up {
     display: inline-block;
     font-size: 18px;
+    letter-spacing: -2px;
 }
 .section-h2-next-text {
-    display: inline-block;
-    margin-right: 141px;
-    /*156px*/
     color: #8f8f8f;
     font-size: 13px;
+    margin: -4px 0 0 19px;
+    letter-spacing: -1.5px;
 }
 .border-bottom-3 {
     padding-bottom: 10px;
 }
 .sec-header-p-4 {
-    margin-top: 20px;
+    margin-top: 19px;
     color: #8f8f8f;
     font-size: 14px;
     line-height: 15px;
-    letter-spacing: -0.05em;
+    letter-spacing: -1.8px;
 }
-#section-2 {
-    margin-top: 35px;
+.section-2 {
+    margin-top: 34px;
 }
 .gray-org-box-list::after {
     display: block;
@@ -622,11 +636,11 @@ body {
 .gray-org-box {
     float: left;
 }
-#container-3 {
+.container-3 {
     margin-top: 43px;
 }
 .agree {
-    padding: 23px 20px 10px 19px;
+    padding: 23px 20px 10px 22px;
 }
 .agree-2 {
     padding: 22px 19px 10px;
