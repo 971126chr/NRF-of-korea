@@ -13,7 +13,7 @@ body {
 }
 .main-border-y-index-2 {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 59px 57px 57px 60px;
+    padding: 59px 57px 54px 60px;
 }
 .main-border-y-2 {
     background: url("../images/main-border-y.png") repeat-y;
@@ -114,10 +114,15 @@ body {
     font-size: 18px;
     letter-spacing: -1.5px;
 }
-.section {
-    margin-top: 30px;
+.section,.section-index-2 {
     color: #9b9b9b;
     font-size: 11px;
+}
+.section {
+    margin-top: 29px;
+}
+.section-index-2 {
+    margin-top: 26px;
 }
 .section-top-border,.section-top-border-2,.section-top-border-3 {
     padding-top: 3px;
@@ -142,7 +147,7 @@ body {
     padding: 35px 25px 34px 29px;
 }
 .section-bottom-border-2 {
-    padding: 30px 21px 30px 19px;
+    padding: 30px 21px 23px 34px;
 }
 .section-bottom-border-3 {
     padding: 20px 18px 63px 21px;
@@ -282,12 +287,12 @@ body {
 }
 .section-p-1,.section-p-2 {
     position: relative;
-    padding: 0 0 20px 11px;
+    padding-bottom: 20px;
 }
 .section-p-3 {
     position: relative;
     min-height: 117px;
-    padding: 29px 0 34px 11px;
+    padding: 31px 0 34px;
 }
 .yellow-box,.yellow-box-2,.org-box {
     width: 65px;
@@ -325,29 +330,30 @@ body {
     top: 7px;
 }
 .list-2 {
-    top: 35px;
+    top: 36px;
 }
 .list-3 {
-    list-style: url("../images/ul-image.png") outside;
+    list-style: url("../images/ul-image.png");
+    top: 26px;
 }
 .dl-style {
     display: flex;
 }
 .section-p-2 {
-    padding-top: 20px;
+    padding-top: 21px;
 }
 .section-p-4 {
     position: relative;
     min-height: 174px;
-    padding: 30px 0 0 11px;
+    padding-top: 30px;
 }
 .last-p-top {
     display: inline-block;
     position: absolute;
-    margin: 1px 0 24px;
+    margin: 1px 0 23px -2px;
 }
 .list-4 {
-    top: 65px;
+    top: 62px;
 }
 
 /*실전지침 section*/
