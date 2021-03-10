@@ -1,7 +1,11 @@
 body {
-    max-width: 790px;
+    max-width: 1200px;
+    padding: 0 110px 48px 90px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+.main {
+    margin-top: 42px;
 }
 .main-border-top-x {
     background: url("../images/main-border-radius-top.png") no-repeat top;
