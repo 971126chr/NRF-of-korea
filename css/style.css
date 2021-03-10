@@ -648,20 +648,21 @@ body {
 .agree-form-title {
     font-size: 15px;
     color: #f7941e;
-    letter-spacing: -0.05em;
+    letter-spacing: -2px;
 }
 .agree-form-p,.agree-form-p-2 {
     color: #949494;
     font-size: 11px;
     line-height: 18px;
-    margin-top: 20px;
     overflow-y: scroll;
 }
 .agree-form-p {
     height: 161px;
+    margin-top: 17px;
 }
 .agree-form-p-2 {
     height: 178px;
+    margin-top: 20px;
 }
 .checkbox {
     height: 25px;
