@@ -1,8 +1,66 @@
 body {
-    max-width: 1200px;
+    width: 1200px;
     padding: 0 110px 48px 90px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.top-menu {
+    float: right;
+}
+.top-menu-list-clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.top-menu-list {
+    float: left;
+}
+.top-menu-list:not(:last-child) {
+    margin: 2px 20px 0 0;
+}
+.top-menu-list:last-child {
+    margin-right: 2px;
+}
+.header-logo {
+    margin-top: 39px;
+    display: block;
+    float: left;
+}
+.nav-bar {
+    display: inline-block;
+    margin: 40px 1px 0 83px;
+}
+.nav-bar-left {
+    background: url("../images/header/org-nav-left.png") no-repeat left;
+    width: 9px;
+    height: 56px;
+}
+.nav-bar-center {
+    background: url("../images/header/org-nav-center.png") repeat-x;
+    width: 793px;
+    height: 56px;
+}
+.nav-bar-right {
+    background: url("../images/header/org-nav-right.png") no-repeat right;
+    width: 5px;
+    height: 56px;
+}
+.nav-bar {
+    float: left;
+}
+.nav-bar>li>a {
+    text-decoration: none;
+}
+.nav-bar-list:nth-child(1) {
+    padding: 6px 44.5px 15px 20px;
+}
+.nav-bar-list:not(:nth-child(1)) {
+    padding: 16px 0 24px 0;
 }
 .main {
     margin-top: 42px;
