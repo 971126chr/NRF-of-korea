@@ -4,6 +4,11 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .header::after {
     content: "";
     display: block;
@@ -33,7 +38,9 @@ body {
 }
 .nav-bar {
     display: inline-block;
-    margin: 40px 1px 0 83px;
+    min-width: 796px;
+    min-height: 56px;
+    margin: 15px 1px 0 83px;
 }
 .nav-bar-left {
     background: url("../images/header/org-nav-left.png") no-repeat left;
@@ -42,28 +49,57 @@ body {
 }
 .nav-bar-center {
     background: url("../images/header/org-nav-center.png") repeat-x;
-    width: 793px;
+    width: 791px;
     height: 56px;
 }
 .nav-bar-right {
     background: url("../images/header/org-nav-right.png") no-repeat right;
-    width: 5px;
     height: 56px;
 }
-.nav-bar {
+.nav-bar-text {
+    display: flex;
+    min-width: 155px;
+    line-height: 50px;
+}
+.nav-bar-text>li>a {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+.nav-bar-text>li>a:hover {
+    background: url("../images/header/nav-bar-hover.png");
+    color: #ff7500;
+}
+.nav-bar-text>li:nth-child(2) {
+    margin-left: 18px;
+}
+.nav-bar-text>li:nth-child(3) {
+    margin-left: 26px;
+}
+.nav-bar-text>li:nth-child(4) {
+    margin-left: 26px;
+}
+.aside {
+    margin: 62px 53px 0 33px;
     float: left;
 }
-.nav-bar>li>a {
+.aside-list {
+    margin: 29px 29px 29px 0;
+}
+.aside-list>li>a {
     text-decoration: none;
 }
-.nav-bar-list:nth-child(1) {
-    padding: 6px 44.5px 15px 20px;
-}
-.nav-bar-list:not(:nth-child(1)) {
-    padding: 16px 0 24px 0;
+.aside-list-style {
+    margin-top: 19px;
 }
 .main {
     margin-top: 42px;
+    float: left;
 }
 .main-border-top-x {
     background: url("../images/main-border-radius-top.png") no-repeat top;
@@ -157,7 +193,7 @@ body {
 .sec-header-p {
     margin-top: 29px;
     font-size: 19px;
-    letter-spacing: -2.2px;
+    letter-spacing: -2.3px;
     white-space: nowrap;
 }
 .sec-header-p-3 {
