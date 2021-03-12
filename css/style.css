@@ -85,17 +85,33 @@ body::after {
     margin-left: 26px;
 }
 .aside {
-    margin: 62px 53px 0 33px;
+    margin: 62px 27px 0 29px;
     float: left;
 }
 .aside-list {
-    margin: 29px 29px 29px 0;
+    margin-top: 29px;
 }
 .aside-list>li>a {
     text-decoration: none;
+    font-size: 14px;
+    color: #f8a94b;
+    padding: 6px 79px 6px 20px;
 }
 .aside-list-style {
     margin-top: 19px;
+}
+.aside-list-style-2 {
+    margin-top: 18px;
+}
+.aside-list-style-3 {
+    margin-top: 20px;
+}
+.aside-list>li>a:hover {
+    color: #f7941e;
+    font-weight: bold;
+    background: url("../images/aside/aside-hover.png") no-repeat left;
+    max-width: 155px;
+    max-height: 27px;
 }
 .main {
     margin-top: 42px;
