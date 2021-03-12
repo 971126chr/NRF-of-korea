@@ -88,23 +88,40 @@ body::after {
     margin: 62px 27px 0 29px;
     float: left;
 }
+.aside-company-introduce {
+    padding-left: 4px;
+}
 .aside-list {
-    margin-top: 29px;
+    margin-top: 28px;
+    position: relative;
+    display: inline-block;
 }
 .aside-list>li>a {
     text-decoration: none;
     font-size: 14px;
+    letter-spacing: -1px;
     color: #f8a94b;
+}
+.aside-list-padding {
+    padding: 6px 61px 6px 20px;
+}
+.aside-list-padding-2 {
     padding: 6px 79px 6px 20px;
 }
+.aside-list-padding-3 {
+    padding: 6px 93px 6px 20px;
+}
+.aside-list-padding-4 {
+    padding: 6px 107px 6px 20px;
+}
 .aside-list-style {
-    margin-top: 19px;
+    margin-top: 17px;
 }
 .aside-list-style-2 {
-    margin-top: 18px;
+    margin-top: 16px;
 }
 .aside-list-style-3 {
-    margin-top: 20px;
+    margin-top: 17px;
 }
 .aside-list>li>a:hover {
     color: #f7941e;
@@ -113,8 +130,37 @@ body::after {
     max-width: 155px;
     max-height: 27px;
 }
+.dropdown {
+    /*
+    display: none;
+    */
+    position: absolute;
+    z-index: 1;
+    margin-top: 5px;
+}
+.aside-list>li>a:hover .dropdown {
+    display: block;
+}
+.dropdown>li>a {
+    text-decoration: none;
+    background: #f2be6d;
+    color: #ffffff;
+    font-size: 11px;
+    margin-left: 18px;
+    padding-left: 14px;
+    line-height: 16px;
+    width: 120px;
+    height: 16px;
+    display: block;
+}
+.dropdown>li:not(:first-child) {
+    margin-top: 1px;
+}
+.dropdown>li>a:hover {
+    background: #f7941e;
+}
 .main {
-    margin-top: 42px;
+    margin-top: 32px;
     float: left;
 }
 .main-border-top-x {
@@ -123,7 +169,7 @@ body::after {
 }
 .main-border-y {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 57px 57px 57px 60px;
+    padding: 58px 60px 57px 61px;
 }
 .main-border-y-index-2 {
     background: url("../images/main-border-y.png") repeat-y;
@@ -190,7 +236,7 @@ body::after {
     float: right;
     font-size: 11px;
     letter-spacing: -0.025em;
-    margin-top: -1px;
+    margin-top: 3px;
 }
 .text-grey-org-a {
     width: 53px;
@@ -394,6 +440,52 @@ body::after {
     color: #a8a8a8;
     font-size: 13px;
     line-height: 18px;
+}
+
+/* 채용안내 footer*/
+
+.footer {
+    min-width: 1000px;
+    height: 120px;
+    margin-top: 50px;
+    float: left;
+}
+.footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer-left {
+    display: inline-block;
+}
+.footer-left>li {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+.footer-left>li:not(:first-child):after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    border-left: 1px solid #c8c8c8;
+}
+.footer-left>li>a {
+    text-decoration: none;
+    padding: 0 9px 0 11px;
+    color: #7f7f7f;
+}
+.footer-right {
+    color: #7f7f7f;
+    font-size: 7px;
+    float: right;
+}
+.footer-right>span {
+    margin-right: 15px;
 }
 
 /*인사관리 section 부분*/
