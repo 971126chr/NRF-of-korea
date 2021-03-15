@@ -1,6 +1,5 @@
 body {
     width: 1200px;
-    padding: 0 110px 48px 90px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -8,6 +7,9 @@ body::after {
     content: "";
     display: block;
     clear: both;
+}
+.wrap {
+    padding: 0 110px 48px 90px;
 }
 .header-2 {
     width: 960px;
@@ -163,6 +165,7 @@ body::after {
     background: url("../images/aside/aside-hover.png") no-repeat left;
     max-width: 155px;
     max-height: 27px;
+    padding: 6px 79px 6px 20px;
 }
 .dropdown {
     /*
