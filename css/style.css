@@ -84,6 +84,10 @@ body::after {
     background: url("../images/header/nav-bar-hover.png");
     color: #ff7500;
 }
+.nav-bar-text>li>a.active {
+    background: url("../images/header/nav-bar-hover.png");
+    color: #ff7500;
+}
 .nav-bar-text>li:nth-child(2) {
     margin-left: 18px;
 }
@@ -153,7 +157,7 @@ body::after {
     max-width: 155px;
     max-height: 27px;
 }
-.aside-list>li>a:visited {
+.aside>.aside-list-style-2>a.active {
     color: #f7941e;
     font-weight: bold;
     background: url("../images/aside/aside-hover.png") no-repeat left;
