@@ -7,7 +7,10 @@ body {
     padding: 0 110px 0 90px;
     background: url("../images/index-bg.png") no-repeat center bottom;
 }
-.wrap::after,.wrap-index-3::after {
+.wrap-index-2 {
+    padding: 0 110px 0 90px;
+}
+.wrap::after,.wrap-index-2,.wrap-index-3::after {
     content: "";
     display: block;
     clear: both;
@@ -15,6 +18,10 @@ body {
 .wrap-index-3 {
     padding: 0 110px 0 90px;
     background: url("../images/index-3-bg.png") no-repeat center bottom;
+}
+.wrap-index-5 {
+    padding: 0 110px 0 90px;
+    background: url("../images/index-5-bg.png") no-repeat center bottom;
 }
 .header-2 {
     width: 960px;
@@ -122,7 +129,11 @@ body {
     float: left;
 }
 .aside-4 {
-    margin: 62px 17px 0 40px;
+    margin: 62px 14px 0 40px;
+    float: left;
+}
+.aside-5 {
+    margin: 57px 24px 0 29px;
     float: left;
 }
 .aside-company-introduce {
@@ -157,14 +168,20 @@ body {
 .aside-list-padding-6 {
     padding: 6px 67px 6px 20px;
 }
+.aside-list-padding-7 {
+    padding: 6px 14px 6px 20px;
+}
+.aside-list-padding-8 {
+    padding: 6px 57px 6px 20px;
+}
+.aside-list-padding-9 {
+    padding: 6px 31px 6px 20px;
+}
 .aside-list-style {
     margin-top: 17px;
 }
 .aside-list-style-2 {
     margin-top: 16px;
-}
-.aside-list-style-3 {
-    margin-top: 17px;
 }
 .aside-list>li>a:hover {
     color: #f7941e;
@@ -181,7 +198,7 @@ body {
     max-height: 27px;
     padding: 6px 79px 6px 20px;
 }
-.middle>.aside-2>.aside-list>li>a.active {
+.middle>.aside-2>.aside-list>li>a.active,.middle>.aside-3>.aside-list>li>a.active,.middle>.aside-4>.aside-list>li>a.active {
     color: #f7941e;
     font-weight: bold;
     background: url("../images/aside/aside-hover.png") no-repeat left;
@@ -189,13 +206,13 @@ body {
     max-height: 27px;
     padding: 6px 68px 6px 20px;
 }
-.middle>.aside-3>.aside-list>li>a.active {
+.middle>.aside-5>.aside-list>li>a.active {
     color: #f7941e;
     font-weight: bold;
     background: url("../images/aside/aside-hover.png") no-repeat left;
     max-width: 155px;
     max-height: 27px;
-    padding: 6px 68px 6px 20px;
+    padding: 6px 93px 6px 20px;
 }
 .dropdown {
     /*
@@ -241,6 +258,10 @@ body {
     margin-top: 31px;
     float: left;
 }
+.main-4 {
+    margin-top: 46px;
+    float: left;
+}
 .main-border-top-x {
     background: url("../images/main-border-radius-top.png") no-repeat top;
     padding-top: 3px;
@@ -263,7 +284,7 @@ body {
 }
 .main-border-y-3 {
     background: url("../images/main-border-y.png") repeat-y;
-    padding: 72px 60px 176px;
+    padding: 63px 60px 177px;
 }
 .main-border-y-4 {
     background: url("../images/main-border-y.png") repeat-y;
@@ -527,7 +548,7 @@ body {
 .footer {
     height: 120px;
 }
-.footer::after {
+.footer::after,.footer-index-3::after,.footer-index-4::after {
     content: "";
     display: block;
     clear: both;
@@ -819,11 +840,6 @@ body {
 .footer-index-3 {
     height: 119px;
 }
-.footer::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .footer-left-index-3 {
     display: inline-block;
     margin-top: 57px;
@@ -920,15 +936,8 @@ body {
     left: 194px;
 }
 .index-4-org-button,.index-4-white-button {
-    display: inline-block;
-    /*
-    font-size: 0;
-    */
     border: 0;
     background: none;
-}
-.index-4-org-button {
-    margin-right: 6px;
 }
 
 /*인재상 footer*/
@@ -956,6 +965,7 @@ body {
 }
 .border-bottom-3 {
     padding-bottom: 10px;
+    position: relative;
 }
 .sec-header-p-4 {
     margin-top: 19px;
