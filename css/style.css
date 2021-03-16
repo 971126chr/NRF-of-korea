@@ -121,6 +121,10 @@ body {
     margin: 65px 12px 0 41px;
     float: left;
 }
+.aside-4 {
+    margin: 62px 17px 0 40px;
+    float: left;
+}
 .aside-company-introduce {
     padding-left: 4px;
 }
@@ -813,12 +817,7 @@ body {
 
 /*실전지침 footer*/
 .footer-index-3 {
-    min-width: 1000px;
-    max-width: 1200px;
     height: 119px;
-    background-image: url("../images/index-3-bg-main.png"), url("../images/index-3-bg-right.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right, bottom right;
 }
 .footer::after {
     content: "";
@@ -930,6 +929,11 @@ body {
 }
 .index-4-org-button {
     margin-right: 6px;
+}
+
+/*인재상 footer*/
+.footer-index-4 {
+    height: 121px;
 }
 
 /*회원가입*/
