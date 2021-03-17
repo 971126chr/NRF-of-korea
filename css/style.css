@@ -1,0 +1,25 @@
+body {
+    width: 1152px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*index file header*/
+.header-left-bg {
+    background: url("../img/header-right-bg.png") repeat-x left;
+    width: auto;
+    height: 49px;
+}
+.header-main-bg {
+    background: url("../img/header-main-bg.png") no-repeat;
+    width: 1150px;
+    height: 49px;
+}
+.header-right-bg {
+    background: url("../img/header-left-bg.png") repeat-x right;
+    width: auto;
+    height: 49px;
+}
+.header {
+    
+}
