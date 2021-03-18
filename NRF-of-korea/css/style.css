@@ -1,4 +1,5 @@
 body {
+    width: 1152px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -11,20 +12,11 @@ body {
     background-position: left;
     height: 49px;
 }
-/*
-.header-main-bg {
-    background: url("../img/header-center-bg.png") no-repeat center;
-    height: 49px;
-    text-indent: 50%;
-    z-index: 1;
-}
 .header-right-bg {
     background: url("../img/header-left-bg.png") repeat-x right;
     background-position: right;
-    width: 440px;
     height: 49px;
 }
-*/
 .header {
     position: relative;
 }
@@ -35,8 +27,8 @@ body {
     text-decoration: none;
     color: #ffffff;
     font: 16px lighter;
-    line-height: 29px;
-    letter-spacing: -1px;
+    line-height: 20px;
+    letter-spacing: -2.5px;
 }
 .header-h2 {
     position: absolute;
@@ -44,6 +36,58 @@ body {
     left: 139px;
     color: #b9c4d5;
     font: 12px lighter;
-    line-height: 29px;
-    letter-spacing: -1px;
+    line-height: 13px;
+    letter-spacing: -0.5px;
+}
+div.after-login {
+    position: absolute;
+    right: 223px;
+    padding: 0 26px 0 80px;
+    background: url("../img/header-center-bg.png") no-repeat;
+    height: 49px;
+}
+p.after-login-text::before {
+    padding-left: 9px;
+    background: url("../img/user-id-marker.png") no-repeat left center;
+    width: 3px;
+    height: 3px;
+    display: inline;
+    padding-top: 3px;
+    margin-left: 17px;
+    content: "";
+}
+p.after-login-text {
+    color: #cacbcb;
+    font-size: 12px;
+    display: inline-block;
+    padding-top: 17px;
+}
+strong.user-id {
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.home-list {
+    position: absolute;
+    top: 16px;
+    right: 86px;
+}
+.home-list>li {
+    display: inline-block;
+}
+.home-list>li:not(:first-child) {
+    height: 7px;
+    background: url("../img/header-home-bar.png") no-repeat left center;
+}
+.home-list>li>a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #adc1d5;
+    padding: 0 9px;
+}
+.header-button-logout {
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    border: none;
 }
