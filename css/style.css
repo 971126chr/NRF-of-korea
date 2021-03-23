@@ -268,4 +268,18 @@ strong.user-id {
 .section-content-right {
     background: url("../img/section-content-bg-right.png") no-repeat right;
     height: 599px;
+    padding: 38px 25px 58px 11px;
+}
+.section-table {
+    white-space: nowrap;
+}
+.table-caption {
+    background: #36699b;
+    width: auto;
+    height: 21px;
+    line-height: 21px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 38px 6px 12px;
 }
