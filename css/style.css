@@ -274,12 +274,28 @@ strong.user-id {
     white-space: nowrap;
 }
 .table-caption {
-    background: #36699b;
-    width: auto;
+    background: #36699b url('../img/table-caption-marker.png') no-repeat 12px;
+    border-radius: 4px 4px 0 0;
+    width: 136px;
     height: 21px;
     line-height: 21px;
     letter-spacing: -1px;
     color: #ffffff;
     font-size: 12px;
-    padding: 6px 38px 6px 12px;
 }
+tr,th,td {
+    display: block;
+}
+.section-table>thead>tr>th {
+    width: 138px;
+    height: 24px;
+    background: #e7e9ed;
+    border: 1px solid #cccccc;
+    color: #65839d;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: -1px;
+}
+.section-table>thead>tr>th:first-child {
+    border-top: 2px solid #36699b;
+} 
