@@ -199,7 +199,7 @@ strong.user-id {
     padding: 6px 46px 7px 32px;
 }
 .section {
-    width: 913px;
+    width: 915px;
     height: 700px;
     padding: 3px 0 0 2px;
     float: left;
@@ -214,7 +214,7 @@ strong.user-id {
 }
 .section-h2-bg {
     background: url("../img/section-h2-bg.png") repeat-x;
-    width: 895px;
+    width: 897px;
     height: 36px;
 }
 .section-h2-text {
@@ -232,13 +232,13 @@ strong.user-id {
 }
 .section-bg {
     background: url("../img/section-bg.png") repeat-x;
-    width: 911px;
+    width: 912px;
     height: 665px;
 }
 .section-bg-right {
     background: url("../img/section-bg-right.png") no-repeat right;
     height: 592px;
-    padding: 15px 8px 58px;
+    padding: 15px 8px 58px 10px;
 }
 .section-h2-orange-bg {
     background: url("../img/section-h2-orange-bg.png") no-repeat;
@@ -259,6 +259,7 @@ strong.user-id {
     background: url("../img/section-content-bg-left.png") no-repeat left;
     width: 4px;
     height: 599px;
+    padding-left: 4px;
 }
 .section-content-bg {
     background: url("../img/section-content-bg.png") repeat-x;
@@ -269,6 +270,7 @@ strong.user-id {
     background: url("../img/section-content-bg-right.png") no-repeat right;
     height: 599px;
     padding: 38px 25px 58px 11px;
+    box-sizing: border-box;
 }
 .section-table {
     white-space: nowrap;
@@ -283,19 +285,37 @@ strong.user-id {
     color: #ffffff;
     font-size: 12px;
 }
-tr,th,td {
-    display: block;
-}
-.section-table>thead>tr>th {
-    width: 138px;
+.section-table-1>tbody>tr.first-tr>th,.section-table-1>tbody>tr.first-tr>th.th-right {
     height: 24px;
     background: #e7e9ed;
     border: 1px solid #cccccc;
+    border-top: 2px solid #36699b;
     color: #65839d;
     font-size: 12px;
     line-height: 25px;
     letter-spacing: -1px;
 }
-.section-table>thead>tr>th:first-child {
+.section-table-1>tbody>tr.first-tr>th {
+    width: 138px;
+}
+.section-table-1>tbody>tr.first-tr>th.th-right {
+    width: 137px;
+}
+.section-table-1>tbody>tr.first-tr>td,.section-table-1>tbody>tr.first-tr>td.td-right {
+    height: 24px;
+    background: #f3f3f3;
+    border: 1px solid #cccccc;
     border-top: 2px solid #36699b;
-} 
+    color: #414141;
+    font-size: 12px;
+    line-height: 25px;
+
+}
+.section-table-1>tbody>tr.first-tr>td {
+    width: 289px;
+    padding-left: 15px;
+}
+.section-table-1>tbody>tr.first-tr>td.td-right {
+    width: 286px;
+    padding-left: 11px;
+}
