@@ -289,6 +289,12 @@ strong.user-id {
     position: absolute;
     left: 23px;
 }
+.table-th-colgroup {
+    width: 10%;
+}
+.table-td-colgroup {
+    width: 30%;
+}
 .section-table-1>tbody>tr.first-tr>th,.section-table-1>tbody>tr.first-tr>th.th-right {
     height: 24px;
     background: #e7e9ed;
