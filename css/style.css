@@ -229,6 +229,7 @@ strong.user-id {
     background: url("../img/section-bg-left.png") no-repeat left;
     width: 2px;
     height: 665px;
+    padding-left: 2px;
 }
 .section-bg {
     background: url("../img/section-bg.png") repeat-x;
@@ -238,7 +239,7 @@ strong.user-id {
 .section-bg-right {
     background: url("../img/section-bg-right.png") no-repeat right;
     height: 592px;
-    padding: 15px 8px 58px 10px;
+    padding: 15px 11px 58px 8px;
 }
 .section-h2-orange-bg {
     background: url("../img/section-h2-orange-bg.png") no-repeat;
@@ -250,40 +251,43 @@ strong.user-id {
 .section-h2-orange-text {
     color: #fa6c03;
     font-size: 16px;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     position: absolute;
     top: 13px;
     left: 35px;
 }
 .section-content-bg-left {
     background: url("../img/section-content-bg-left.png") no-repeat left;
-    width: 4px;
     height: 599px;
     padding-left: 4px;
 }
 .section-content-bg {
     background: url("../img/section-content-bg.png") repeat-x;
-    width: 888px;
     height: 599px;
 }
 .section-content-right {
     background: url("../img/section-content-bg-right.png") no-repeat right;
     height: 599px;
-    padding: 38px 25px 58px 11px;
+    padding: 37px 25px 58px 8px;
     box-sizing: border-box;
 }
 .section-table {
     white-space: nowrap;
 }
 .table-caption {
-    background: #36699b url('../img/table-caption-marker.png') no-repeat 12px;
+    background: #36699b url('../img/table-caption-marker.png') no-repeat 12px 6px;
     border-radius: 4px 4px 0 0;
     width: 136px;
     height: 21px;
-    line-height: 21px;
+    line-height: 22px;
     letter-spacing: -1px;
     color: #ffffff;
     font-size: 12px;
+    position: relative;
+}
+.caption-text {
+    position: absolute;
+    left: 23px;
 }
 .section-table-1>tbody>tr.first-tr>th,.section-table-1>tbody>tr.first-tr>th.th-right {
     height: 24px;
@@ -292,14 +296,17 @@ strong.user-id {
     border-top: 2px solid #36699b;
     color: #65839d;
     font-size: 12px;
-    line-height: 25px;
-    letter-spacing: -1px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
 }
-.section-table-1>tbody>tr.first-tr>th {
-    width: 138px;
+.section-table-1>tbody>tr.first-tr>th,.section-table-1>tbody>tr:nth-child(3)>th:first-child {
+    text-align: left;
+    padding-left: 39px;
 }
 .section-table-1>tbody>tr.first-tr>th.th-right {
-    width: 137px;
+    width: 88px;
+    text-align: left;
+    padding-left: 49px;
 }
 .section-table-1>tbody>tr.first-tr>td,.section-table-1>tbody>tr.first-tr>td.td-right {
     height: 24px;
@@ -308,14 +315,64 @@ strong.user-id {
     border-top: 2px solid #36699b;
     color: #414141;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 24px;
 
 }
-.section-table-1>tbody>tr.first-tr>td {
-    width: 289px;
+.section-table-1>tbody>tr:nth-child(-n+3)>td {
+    width: 273px;
     padding-left: 15px;
 }
+.section-table-1>tbody>tr:nth-child(4)>td>div.table-line-height {
+    padding-left: 13px;
+}
 .section-table-1>tbody>tr.first-tr>td.td-right {
-    width: 286px;
     padding-left: 11px;
+}
+.section-table-1>tbody>tr>th,.section-table-1>tbody>tr>td {
+    height: 24px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    line-height: 24px;
+}
+.section-table-1>tbody>tr>th {
+    color: #65839d;
+    background: #e7e9ed;
+    letter-spacing: -0.5px;
+}
+.section-table-1>tbody>tr>td {
+    color: #414141;
+    background: #f3f3f3;
+}
+.section-table-1>tbody>tr:nth-child(2)>th:first-child,.section-table-1>tbody>tr:nth-child(4)>th:first-child {
+    width: 111px;
+    text-align: left;
+    padding-left: 27px;
+}
+.section-table-1>tbody>tr:not(:first-child)>td {
+    position: relative;
+}
+.section-table-1>tbody>tr>th.th-right-2,.section-table-1>tbody>tr>td.td-right-2 {
+    content: "";
+}
+.section-table-1>tbody>tr>td>strong.td-strong {
+    color: #36699b;
+    position: absolute;
+    top: 2px;
+}
+.section-table-1>tbody>tr:not(:nth-child(-n+2))>td>div.table-line-height {
+    position: absolute;
+    top: 2px;
+}
+.section-table-1>tbody>tr:nth-child(3)>th.th-right-3 {
+    text-align: left;
+    padding-left: 55px;
+}
+.section-table-1>tbody>tr:nth-child(3)>td.td-right-3 {
+    padding-left: 13px;
+}
+.section-table-1>tbody>tr:nth-child(5)>th:first-child {
+    width: 106px;
+    text-align: left;
+    padding-left: 32px;
+    vertical-align: middle;
 }
