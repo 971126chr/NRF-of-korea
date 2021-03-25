@@ -214,6 +214,10 @@ strong.user-id {
     letter-spacing: -0.5px;
     border-bottom: #c1c1c1 dotted 1px;
 }
+.aside-list>li>a.text-color {
+    color: #366899;
+    font-weight: bold;
+}
 .aside-list>li:first-child>a {
     padding: 0 34px 6px 32px;
 }
@@ -302,16 +306,25 @@ strong.user-id {
     background: url("../img/section-content-bg.png") repeat-x;
     height: 599px;
 }
-.section-content-right {
+.section-content-right,.section-content-right-2 {
     background: url("../img/section-content-bg-right.png") no-repeat right;
     height: 599px;
-    padding: 37px 25px 58px 8px;
     box-sizing: border-box;
+}
+.section-content-right {
+    padding: 37px 25px 58px 8px;
+}
+.section-content-right-2 {
+    padding: 37px 25px 0 8px;
+}
+.section-content-right-3 {
+    padding: 37px 25px 39px 11px;
+    position: relative;
 }
 .section-table-1 {
     white-space: nowrap;
 }
-.table-caption,.table-caption-2 {
+.table-caption,.table-caption-2,.table-caption-3 {
     background: #36699b url('../img/table-caption-marker.png') no-repeat 12px 6px;
     border-radius: 4px 4px 0 0;
     line-height: 22px;
@@ -326,6 +339,10 @@ strong.user-id {
 }
 .table-caption-2 {
     width: 156px;
+    height: 21px;
+}
+.table-caption-3 {
+    width: 146px;
     height: 21px;
 }
 .caption-text {
@@ -483,4 +500,141 @@ td.small-td {
 }
 .section-table-2:last-child {
     margin-top: 16px;
+}
+
+/*index-2 section*/
+
+.section-table-3 {
+    white-space: nowrap;
+}
+.table-3-caption {
+    display: none;
+}
+.section-table-3>tbody>tr>th {
+    height: 24px;
+    border: 1px solid #cccccc;
+    line-height: 24px;
+    background: #36699b;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+}
+.section-table-3>colgroup>col.col-1 {
+    width: 63px;
+}
+.section-table-3>colgroup>col.col-2 {
+    width: 203px;
+}
+.section-table-3>colgroup>col.col-3 {
+    width: 60px;
+}
+.section-table-3>colgroup>col.col-4 {
+    width: 82px;
+}
+.section-table-3>colgroup>col.col-5 {
+    width: 446px;
+}
+.section-table-3>tbody>tr>td {
+    height: 24px;
+    border: 1px solid #cccccc;
+    line-height: 24px;
+    background: #f3f3f3;
+    color: #414141;
+    font-size: 12px;
+}
+.section-table-3>tbody>tr>td:not(:last-child) {
+    text-align: center;
+}
+.section-table-3>tbody>tr>td:last-child {
+    padding-left: 18px;
+}
+ul.index-2-list,ul.index-2-list-2 {
+    font-size: 12px;
+    line-height: 18px;
+    color: #414141;
+    list-style: url("../img/index-2-list-marker.png") inside;
+}
+ul.index-2-list {
+    margin: 18px 0 0 13px;
+}
+ul.index-2-list-2 {
+    margin: 13px 0 0 13px;
+}
+.section-content-right-2>.section-table-1 {
+    margin-top: 32px;
+}
+.section-content-right-2>.section-table-1>tbody>tr>td {
+    padding-left: 0;
+    text-align: center;
+}
+.section-content-right-2>.section-table-1>tbody>tr>td>strong.table-text-color {
+    color: #36699b;
+}
+div.section-content-right-2>table.section-table-1>colgroup>col.col-1 {
+    width: 118px;
+}
+div.section-content-right-2>table.section-table-1>colgroup>col.col-2 {
+    width: 249px;
+}
+div.section-content-right-2>table.section-table-1>colgroup>col.col-3 {
+    width: 169px;
+}
+div.section-content-right-2>table.section-table-1>colgroup>col.col-4 {
+    width: 209px;
+}
+div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
+    width: 104px;
+}
+
+/*index-3 section*/
+
+.button-position {
+    position: absolute;
+    top: 105px;
+    right: 25px;
+}
+.index-3-button-left,.index-3-button-right {
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -1px;
+}
+.index-3-button-left {
+    background: url("../img/index-3-button-left.png");
+    width: 73px;
+    height: 23px;
+    padding-right: 6px;
+    margin-right: -2px;
+}
+.index-3-button-right {
+    background: url("../img/index-3-button-right.png");
+    width: 49px;
+    height: 23px;
+    padding-right: 3px;
+}
+.section-content-right-3>.section-table-2 {
+    margin-top: 23px;
+    text-align: center;
+}
+.section-content-right-3>.section-table-2>colgroup>col.col-1 {
+    width: 143px;
+}
+.section-content-right-3>.section-table-2>colgroup>col:not(:first-child) {
+    width: 141px;
+}
+.index-3-table-white-button {
+    border: none;
+    background: url("../img/index-3-table-white-button.png");
+    width: 38px;
+    height: 16px;
+    font-size: 11px;
+    letter-spacing: -1px;
+}
+.index-3-table-white-button:not(:last-child) {
+    margin-right: -2px;
+}
+.section-content-right-3>.section-table-2:last-child {
+    margin-top: 14px;
+    text-align: center;
 }
