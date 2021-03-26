@@ -317,11 +317,14 @@ strong.user-id {
 .section-content-right {
     padding: 37px 25px 58px 8px;
 }
-.section-content-right-2 {
+.section-content-right-2,.section-content-right-4 {
     padding: 37px 25px 0 8px;
 }
 .section-content-right-3 {
     padding: 37px 25px 39px 8px;
+    position: relative;
+}
+.section-content-right-4 {
     position: relative;
 }
 .section-table-1 {
@@ -461,17 +464,19 @@ td.small-td {
     margin-top: 17px;
     text-align: center;
 }
-.section-table-2>tbody>tr>th {
+.section-table-2>tbody>tr>th,.section-table-4>tbody>tr>th {
     height: 24px;
     background: #e7e9ed;
     border: 1px solid #cccccc;
-    border-top: 2px solid #36699b;
     color: #65839d;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: -0.5px;
 }
-.section-table-2>tbody>tr>td {
+.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th {
+    border-top: 2px solid #36699b;
+}
+.section-table-2>tbody>tr>td,.section-table-4>tbody>tr>td {
     height: 24px;
     background: #f3f3f3;
     border: 1px solid #cccccc;
@@ -600,7 +605,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     top: 105px;
     right: 25px;
 }
-.index-3-button-left,.index-3-button-right {
+.index-3-button-left,.index-3-button-right,.index-5-submit-button {
     border: none;
     color: #ffffff;
     font-size: 12px;
@@ -620,20 +625,16 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     height: 23px;
     padding-right: 3px;
 }
-.section-content-right-3>.section-table-2 {
+.section-content-right-3>.section-table-2:nth-child(3),.section-content-right-4>.section-table-2:nth-child(3) {
     margin-top: 23px;
     text-align: center;
 }
-.section-content-right-3>.section-table-2:nth-child(2) {
+.section-content-right-3>.section-table-2:nth-child(4) {
     margin-top: 14px;
     text-align: center;
 }
-.section-content-right-3>.section-table-2:nth-child(4) {
+.section-content-right-3>.section-table-2:nth-child(5) {
     margin-top: 15px;
-    text-align: center;
-}
-.section-content-right-3>.section-table-2:last-child {
-    margin-top: 12px;
     text-align: center;
 }
 .section-content-right-3>.section-table-2>colgroup>col.col-1 {
@@ -653,24 +654,31 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .index-3-table-white-button:not(:last-child) {
     margin-right: -2px;
 }
-.section-content-right-3>.section-table-2:last-child>colgroup>col.col-1 {
+.section-content-right-3>.section-table-2:nth-child(5)>colgroup>col.col-1,.section-content-right-3>.section-table-4>colgroup>col.col-1,.section-content-right-4>.section-table-4>colgroup>col.col-1,.section-content-right-4>.section-table-2:nth-child(4)>colgroup>col.col-1 {
     width: 15%;
 }
-.section-content-right-3>.section-table-2:last-child>colgroup>col.col-2 {
+.section-content-right-3>.section-table-2:nth-child(5)>colgroup>col.col-2,.section-content-right-3>.section-table-4>colgroup>col.col-2,.section-content-right-4>.section-table-4>colgroup>col.col-2,.section-content-right-4>.section-table-2:nth-child(4)>colgroup>col.col-2 {
     width: 85%;
 }
-.section-content-right-3>.section-table-2:last-child>tbody>tr>td {
+.section-content-right-3>.section-table-2:nth-child(5)>tbody>tr>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-2:nth-child(4)>tbody>tr:first-child>td {
     border-top: 2px solid #36699b;
     text-align: left;
     position: relative;
 }
-.file-upload {
+.file-upload,.section-content-right-4>tbody>tr>td.file-upload {
     padding-left: 5px;
 }
-.file-name {
+.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td>div.file-upload {
+    padding-left: 6px;
+}
+.file-name,.section-content-right-4>tbody>tr>td.file-name {
     width: 207px;
 }
-.file-upload>input[type="file"] {
+.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td>div.file-upload>.file-name {
+    width: 309px;
+}
+.file-upload>input[type="file"],
+.section-content-right-4>tbody>tr>td.file-upload>input[type="file"] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -680,7 +688,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     clip: rect(0,0,0,0);
     border: 0;
 }
-.file-upload-button {
+.file-upload-button,.section-content-right-4>tbody>tr>td.file-upload-button {
     background: url("../img/index-3-file-upload-button.png");
     width: 59px;
     height: 16px;
@@ -690,11 +698,92 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     letter-spacing: -1px;
     display: inline-block;
     margin-left: 3px;
-    position: absolute;
-    top: 4px;
-    left: 215px;
     cursor: pointer;
 }
-.file-upload-button>label {
+.file-upload-button,.section-content-right-4>tbody>tr>td.file-upload-button {
+    position: absolute;
+    top: 4px;
+}
+.file-upload-button>label,.section-content-right-4>tbody>tr>td.file-upload-button>label {
     cursor: pointer;
+}
+.section-content-right-3>.section-table-4 {
+    margin-top: 12px;
+}
+.dropdown-menu {
+    width: 206px;
+    height: 18px;
+    background: url("../img/index-3-dropdown.png");
+    padding-left: 10px;
+    font-size: 11px;
+    letter-spacing: -1px;
+    border: none;
+    appearance: none;
+}
+.dropdown-menu::-ms-expand {
+    display: none;
+}
+.section-content-right-3>.section-table-4>tbody>tr>td>form,.section-content-right-4>.section-table-4>tbody>tr>td>form {
+    padding-left: 5px;
+}
+.section-content-right-3>.section-table-4>tbody>tr:last-child>th,.section-content-right-4>.section-table-4>tbody>tr:last-child>th {
+    height: 87px;
+    vertical-align: middle;
+}
+.section-content-right-3>.section-table-4>tbody>tr:last-child>td,.section-content-right-4>.section-table-4>tbody>tr:last-child>td {
+    box-sizing: border-box;
+    padding: 6px 6px 0 5px;
+}
+.table-textarea {
+    border: 1px solid #bbbbbb;
+    width: 712px;
+    height: 54px;
+    overflow-y: scroll;
+    resize: none;
+}
+.table-textarea-bottom-text {
+    font-size: 11px;
+    text-align: right;
+}
+
+/*index-4 section*/
+
+.section-content-right-4>.section-table-2:nth-child(4) {
+    margin-top: 19px;
+}
+.section-content-right-4>.section-table-2:nth-child(5),.section-content-right-4>.section-table-4 {
+    margin-top: 17px;
+}
+.section-content-right-4>.section-table-2>colgroup>col.col-1 {
+    width: 15%;
+}
+.section-content-right-4>.section-table-2>colgroup>col.col-2 {
+    width: 40%;
+}
+.section-content-right-4>.section-table-2>colgroup>col.col-3 {
+    width: 45%;
+}
+.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td:first-child {
+    text-align: center;
+}
+.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td:nth-child(2) {
+    text-align: left;
+    padding-left: 17px;
+}
+.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td:last-child {
+    position: relative;
+    text-align: left;
+}
+
+/*index-5 section*/
+
+.submit-button-position {
+    position: absolute;
+    bottom: 9px;
+    left: 383px;
+}
+.index-5-submit-button {
+    background: url("../img/index-5-submit-button.png");
+    width: 103px;
+    height: 23px;
 }
