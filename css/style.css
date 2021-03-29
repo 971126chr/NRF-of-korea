@@ -1,7 +1,9 @@
 body {
-    width: 1152px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+.wrap {
+    width: 1152px;
 }
 table {
     width: 100%;
@@ -12,10 +14,9 @@ table {
 
 .header-left-bg {
     background: url("../img/header-left-bg.png") repeat-x left;
-    height: 49px;
 }
 .header-right-bg {
-    background: url("../img/header-left-bg.png") repeat-x right;
+    background: url("../img/header-right-bg.png") no-repeat right;
     height: 49px;
 }
 .header {
@@ -50,10 +51,6 @@ div.after-login {
 p.after-login-text::before {
     padding-left: 9px;
     background: url("../img/user-id-marker.png") no-repeat left center;
-    width: 3px;
-    height: 3px;
-    display: inline;
-    padding-top: 3px;
     margin-left: 17px;
     content: "";
 }
@@ -77,7 +74,6 @@ strong.user-id {
     display: inline-block;
 }
 .home-list>li:not(:first-child) {
-    height: 7px;
     background: url("../img/header-home-bar.png") no-repeat left center;
 }
 .home-list>li>a {
@@ -92,29 +88,22 @@ strong.user-id {
     top: 12px;
     right: 9px;
     border: none;
-    width: 63px;
-    height: 23px;
 }
 
 /*index main*/
 
 .main {
-    height: 773px;
     background: url("../img/main-bg.png") repeat-x;
     padding: 12px 0 55px 13px;
-}
-.main::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 .aside {
     background: url("../img/aside-bg.png") no-repeat;
     width: 190px;
     height: 685px;
     padding: 18px 10px 0 11px;
-    position: relative;
-    float: left;
+    position: absolute;
+    top: 61px;
+    left: 13px;
 }
 .aside-h2-border-bottom {
     background: url("../img/aside-text-border-bottom.png") no-repeat bottom;
@@ -246,7 +235,9 @@ strong.user-id {
     width: 915px;
     height: 700px;
     padding: 3px 0 0 2px;
-    float: left;
+    position: absolute;
+    top: 64px;
+    left: 226px;
 }
 .section-h2 {
     padding-left: 15px;
