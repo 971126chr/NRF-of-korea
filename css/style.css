@@ -2,9 +2,11 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
+/*
 .wrap {
     width: 1152px;
 }
+*/
 table {
     width: 100%;
 }
@@ -94,21 +96,22 @@ strong.user-id {
 
 .main {
     background: url("../img/main-bg.png") repeat-x;
-    padding: 12px 0 55px 13px;
+    padding: 100%;
+    position: relative;
 }
 .aside {
-    background: url("../img/aside-bg.png") no-repeat;
-    width: 190px;
-    height: 685px;
+    background: url("../img/aside-bg-2.png") no-repeat;
     padding: 18px 10px 0 11px;
     position: absolute;
-    top: 61px;
+    top: 14px;
     left: 13px;
+}
+.aside-repeat-bg {
+    background: url("../img/aside-repeat-bg.png") repeat-y;
+    min-height: 662px;
 }
 .aside-h2-border-bottom {
     background: url("../img/aside-text-border-bottom.png") no-repeat bottom;
-    width: 190px;
-    height: 28px;
     padding-bottom: 2px;
 }
 .aside-h2 {
@@ -236,7 +239,7 @@ strong.user-id {
     height: 700px;
     padding: 3px 0 0 2px;
     position: absolute;
-    top: 64px;
+    top: 15px;
     left: 226px;
 }
 .section-h2 {
