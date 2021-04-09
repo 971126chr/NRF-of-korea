@@ -102,14 +102,16 @@ strong.user-id {
 }
 .aside {
     background: url("../img/aside-bg-2.png") no-repeat;
-    padding: 18px 10px 0 11px;
+    padding: 18px 10px 0 0;
     position: absolute;
     top: 14px;
     left: 13px;
 }
 .aside-repeat-bg {
     background: url("../img/aside-repeat-bg.png") repeat-y;
+    width: 211px;
     min-height: 662px;
+    padding-left: 11px;
 }
 .aside-h2-border-bottom {
     background: url("../img/aside-text-border-bottom.png") no-repeat bottom;
@@ -136,11 +138,15 @@ strong.user-id {
     top: -11px;
     left: 10px;
 }
-.aside-h2-bg {
+.aside-h2-bg,.aside-h3-bg {
     background: url("../img/aside-h2-bg.png") no-repeat;
     width: 109px;
     height: 14px;
     padding: 9px 44px 5px 37px;
+}
+.aside-h3-bg {
+    position: relative;
+    top: 33px;
 }
 .aside-yellow-marker {
     background: url("../img/aside-yellow-marker.png") no-repeat;
@@ -154,7 +160,6 @@ strong.user-id {
     width: 4px;
     height: 10px;
     position: absolute;
-    top: 59px;
     left: 48px;
 }
 .aside-h3-border-bottom {
@@ -203,36 +208,39 @@ strong.user-id {
 .aside-list {
     padding: 8px 17px 0 12px;
 }
-.aside-list>li>a {
+.aside-list-2 {
+    padding: 35px 17px 0 12px;
+}
+.aside-list>li>a,.aside-list-2>li>a {
     text-decoration: none;
     color: #414141;
     font-size: 12px;
     letter-spacing: -0.5px;
     border-bottom: #c1c1c1 dotted 1px;
 }
-.aside-list>li>a.text-color {
+.aside-list>li>a.text-color,.aside-list-2>li>a.text-color {
     color: #366899;
     font-weight: bold;
 }
-.aside-list>li:first-child>a {
+.aside-list>li:first-child>a,.aside-list-2>li:first-child>a {
     padding: 0 34px 6px 32px;
 }
-.aside-list>li:nth-child(2) {
+.aside-list>li:nth-child(2),.aside-list-2>li:nth-child(2) {
     margin-top: 12px;
 }
-.aside-list>li:nth-child(2)>a {
+.aside-list>li:nth-child(2)>a,.aside-list-2>li:nth-child(2)>a {
     padding: 8px 46px 5px 33px;
 }
-.aside-list>li:nth-child(3) {
+.aside-list>li:nth-child(3),.aside-list-2>li:nth-child(3) {
     margin-top: 10px;
 }
-.aside-list>li:nth-child(3)>a {
+.aside-list>li:nth-child(3)>a,.aside-list-2>li:nth-child(3)>a {
     padding: 7px 58px 6px 32px;
 }
-.aside-list>li:last-child {
+.aside-list>li:last-child,.aside-list-2>li:last-child {
     margin-top: 10px;
 }
-.aside-list>li:last-child>a {
+.aside-list>li:last-child>a,.aside-list-2>li:last-child>a {
     padding: 6px 46px 7px 32px;
 }
 .section {
@@ -483,7 +491,7 @@ td.small-td {
     line-height: 24px;
     letter-spacing: -0.5px;
 }
-.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th {
+.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th,.section-content-right-3>.section-table-2>tbody>tr:first-child>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td {
     border-top: 2px solid #36699b;
 }
 .section-table-2>tbody>tr>td,.section-table-4>tbody>tr>td {
@@ -493,32 +501,6 @@ td.small-td {
     color: #414141;
     font-size: 12px;
     line-height: 24px;
-}
-/*
-.col-1 {
-    width: 10%;
-}
-.col-2 {
-    width: 25%;
-}
-.col-3 {
-    width: 15%;
-}
-*/
-.col-1 {
-    width: 48px;
-}
-.col-2 {
-    width: 219px;
-}
-.col-3 {
-    width: 209px;
-}
-.col-4 {
-    width: 207px;
-}
-.col-5 {
-    width: 166px;
 }
 
 /*index-2 section*/
@@ -636,7 +618,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     margin-top: 23px;
     text-align: center;
 }
-.section-content-right-3>.section-table-2:nth-child(4) {
+.section-content-right-3>.section-table-2:nth-child(4),.section-content-right-3>.section-table-2:nth-child(6) {
     text-align: center;
 }
 .section-content-right-3>.table-caption-3:nth-child(3) {
@@ -674,7 +656,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .section-content-right-3>.section-table-2:nth-child(5)>colgroup>col.col-2,.section-content-right-3>.section-table-4>colgroup>col.col-2,.section-content-right-4>.section-table-4>colgroup>col.col-2,.section-content-right-4>.section-table-2:nth-child(4)>colgroup>col.col-2 {
     width: 85%;
 }
-.section-content-right-3>.section-table-2:nth-child(5)>tbody>tr>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-2:nth-child(4)>tbody>tr:first-child>td {
+.section-content-right-3>.section-table-2:nth-child(5)>tbody>tr>td,.section-content-right-4>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-2:nth-child(4)>tbody>tr:first-child>td {
     border-top: 2px solid #36699b;
     text-align: left;
     position: relative;
