@@ -718,7 +718,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .dropdown-menu::-ms-expand {
     display: none;
 }
-.section-content-right-3>.section-table-4>tbody>tr>td>form,.section-content-right-4>.section-table-4>tbody>tr>td>form {
+.dropdown-menu-left {
     padding-left: 5px;
 }
 .section-content-right-3>.section-table-4>tbody>tr:last-child>th,.section-content-right-4>.section-table-4>tbody>tr:last-child>th {
@@ -743,6 +743,11 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 
 /*index-4 section*/
 
+.button-position-2 {
+    position: absolute;
+    top: 99px;
+    right: 25px;
+}
 .section-content-right-4>.table-caption-4:nth-child(6) {
     margin-top: 19px;
 }
