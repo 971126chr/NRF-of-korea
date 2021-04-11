@@ -491,8 +491,11 @@ td.small-td {
     line-height: 24px;
     letter-spacing: -0.5px;
 }
-.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th,.section-content-right-3>.section-table-2>tbody>tr:first-child>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td {
+.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th,.section-content-right-3>.section-table-2>tbody>tr:first-child>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-2:nth-child(7)>tbody>tr:first-child>td {
     border-top: 2px solid #36699b;
+}
+.section-content-right-3>.section-table-2>tbody>tr:first-child>td {
+    text-align: left;
 }
 .section-table-2>tbody>tr>td,.section-table-4>tbody>tr>td {
     height: 24px;
