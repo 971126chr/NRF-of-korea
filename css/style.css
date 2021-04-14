@@ -97,21 +97,19 @@ strong.user-id {
 
 .main {
     background: url("../img/main-bg.png") repeat-x;
-    padding: 25%;
     position: relative;
 }
 .aside {
-    background: url("../img/aside-bg-2.png") no-repeat;
-    padding: 18px 10px 0 0;
+    background: url("../img/aside-repeat-bg.png") repeat-y;
+    width: 211px;
+    min-height: 680px;
     position: absolute;
     top: 14px;
     left: 13px;
 }
 .aside-repeat-bg {
-    background: url("../img/aside-repeat-bg.png") repeat-y;
-    width: 211px;
-    min-height: 662px;
-    padding-left: 11px;
+    background: url("../img/aside-bg-2.png") no-repeat;
+    padding: 18px 0 0 11px;
 }
 .aside-h2-border-bottom {
     background: url("../img/aside-text-border-bottom.png") no-repeat bottom;
@@ -248,10 +246,7 @@ strong.user-id {
     width: 915px;
     */
     width: 100%;
-    padding: 3px 0 0 2px;
-    position: absolute;
-    top: 15px;
-    left: 226px;
+    padding: 18px 0 0 226px;
 }
 .section-h2 {
     padding-left: 15px;
@@ -291,19 +286,19 @@ strong.user-id {
 .section-h2-orange-bg-left {
     background: url("../img/section-h2-orange-bg-left.png") no-repeat;
     height: 32px;
-    padding-left: 5px;
+    padding-left:32px;
     position: relative;
 }
 .section-h2-orange-bg-center {
     background: url("../img/section-h2-orange-bg-center.png") repeat-x;
-    width: 147px;
+    width: 120px;
     height: 32px;
 }
 .section-h2-orange-bg-right {
     background: url("../img/section-h2-orange-bg-right.png") no-repeat right;
     width: 33px;
     height: 32px;
-    padding-left: 147px;
+    padding-left: 120px;
 }
 .section-h2-orange-text {
     color: #fa6c03;
