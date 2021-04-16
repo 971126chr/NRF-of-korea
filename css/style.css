@@ -102,7 +102,7 @@ strong.user-id {
 .aside {
     background: url("../img/aside-repeat-bg.png") repeat-y;
     width: 211px;
-    min-height: 666px;
+    min-height: 680px;
     position: absolute;
     top: 14px;
     left: 13px;
@@ -315,7 +315,7 @@ strong.user-id {
     padding: 37px 25px 34px 8px;
 }
 .section-content-right-2 {
-    padding: 37px 25px 296px 8px;
+    padding: 37px 25px 280px 8px;
 }
 .section-content-right-3 {
     padding: 37px 25px 17px 8px;
@@ -355,7 +355,7 @@ strong.user-id {
     height: 21px;
 }
 .table-caption-marker {
-    background: url('../img/table-caption-marker.png') no-repeat;
+    background: #ffdc7e;
     width: 3px;
     height: 11px;
     position: absolute;
@@ -467,8 +467,11 @@ td.small-td {
     text-decoration: none;
     color: #396c9e;
 }
-.section-content-right>.section-table-2 {
+.section-table-2 {
     text-align: center;
+}
+.section-content-right-3>div:nth-child(5)>.section-table-2 {
+    text-align: inherit;
 }
 .section-table-2>tbody>tr>th,.section-table-4>tbody>tr>th {
     height: 24px;
@@ -479,7 +482,7 @@ td.small-td {
     line-height: 24px;
     letter-spacing: -0.5px;
 }
-.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th,.section-content-right-3>.section-table-2>tbody>tr:first-child>td,.section-content-right-3>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>.section-table-2:nth-child(7)>tbody>tr:first-child>td {
+.section-table-2>tbody>tr>th,.section-table-4>tbody>tr:first-child>th,.section-content-right-3>div>.section-table-2>tbody>tr:first-child>td,.section-content-right-3>div>.section-table-4>tbody>tr:first-child>td,.section-content-right-4>div:nth-child(4)>.section-table-2>tbody>tr:first-child>td,.section-content-right-4>div:nth-child(5)>.section-table-4>tbody>tr:first-child>td {
     border-top: 2px solid #36699b;
 }
 .section-content-right-3>.section-table-2>tbody>tr:first-child>td {
@@ -552,10 +555,10 @@ ul.index-2-list {
 ul.index-2-list-2 {
     margin: 13px 0 0 13px;
 }
-.section-content-right-2>.table-caption {
+.section-content-right-2>div>.table-caption {
     margin-top: 32px;
 }
-.section-content-right-2>.section-table-1>tbody>tr>td {
+.section-content-right-2>div>.section-table-1>tbody>tr>td {
     padding-left: 0;
     text-align: center;
 }
@@ -612,13 +615,13 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .section-content-right-3>.section-table-2:nth-child(4),.section-content-right-3>.section-table-2:nth-child(6) {
     text-align: center;
 }
-.section-content-right-3>.table-caption-3:nth-child(3) {
+.section-content-right-3>div:nth-child(3)>.table-caption-3 {
     margin-top: 23px;
 }
-.section-content-right-3>.table-caption-3:nth-child(5) {
+.section-content-right-3>div:nth-child(4)>.table-caption-3 {
     margin-top: 14px;
 }
-.section-content-right-3>.table-caption-4:nth-child(7) {
+.section-content-right-3>div:nth-child(5)>.table-caption-4 {
     margin-top: 15px;
 }
 .section-content-right-3>.section-table-2:nth-child(8) {
@@ -655,13 +658,13 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .file-upload,.section-content-right-4>tbody>tr>td.file-upload {
     padding-left: 5px;
 }
-.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td>div.file-upload {
+.section-content-right-4>div:nth-child(3)>.section-table-2>tbody>tr:last-child>td>div.file-upload {
     padding-left: 6px;
 }
 .file-name,.section-content-right-4>tbody>tr>td.file-name {
     width: 207px;
 }
-.section-content-right-4>.section-table-2:nth-child(3)>tbody>tr:last-child>td>div.file-upload>.file-name {
+.section-content-right-4>div:nth-child(3)>.section-table-2>tbody>tr:last-child>td>div.file-upload>.file-name {
     width: 309px;
 }
 .file-upload>input[type="file"],
@@ -690,7 +693,7 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .file-upload-button>label,.section-content-right-4>tbody>tr>td.file-upload-button>label {
     cursor: pointer;
 }
-.section-content-right-3>.table-caption-4:nth-child(9) {
+.section-content-right-3>div:nth-child(6)>.table-caption-4 {
     margin-top: 12px;
 }
 .dropdown-menu {
@@ -709,11 +712,11 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
 .dropdown-menu-left {
     padding-left: 5px;
 }
-.section-content-right-3>.section-table-4>tbody>tr:last-child>th,.section-content-right-4>.section-table-4>tbody>tr:last-child>th {
+.section-content-right-3>div>.section-table-4>tbody>tr:last-child>th,.section-content-right-4>div:nth-child(5)>.section-table-4>tbody>tr:last-child>th {
     height: 87px;
     vertical-align: middle;
 }
-.section-content-right-3>.section-table-4>tbody>tr:last-child>td,.section-content-right-4>.section-table-4>tbody>tr:last-child>td {
+.section-content-right-3>div>.section-table-4>tbody>tr:last-child>td,.section-content-right-4>div:nth-child(5)>.section-table-4>tbody>tr:last-child>td {
     box-sizing: border-box;
     padding: 6px 6px 0 5px;
 }
@@ -736,20 +739,20 @@ div.section-content-right-2>table.section-table-1>colgroup>col.col-5 {
     top: 99px;
     right: 25px;
 }
-.section-content-right-4>.table-caption-4:nth-child(6) {
+.section-content-right-4>div:nth-child(4)>.table-caption-4 {
     margin-top: 19px;
 }
-.section-content-right-4>.table-caption-3:nth-child(4),.section-content-right-4>.table-caption-4:nth-child(8) {
+.section-content-right-4>div:nth-child(3)>.table-caption-3,.section-content-right-4>div:nth-child(5)>.table-caption-4 {
     margin-top: 17px;
 }
-.section-content-right-4>.section-table-2:nth-child(5)>tbody>tr:last-child>td:first-child {
+.section-content-right-4>div:nth-child(3)>.section-table-2>tbody>tr:last-child>td:first-child {
     text-align: center;
 }
-.section-content-right-4>.section-table-2:nth-child(5)>tbody>tr:last-child>td:nth-child(2) {
+.section-content-right-4>div:nth-child(3)>.section-table-2>tbody>tr:last-child>td:nth-child(2) {
     text-align: left;
     padding-left: 17px;
 }
-.section-content-right-4>.section-table-2:nth-child(5)>tbody>tr:last-child>td:last-child,.section-content-right-4>.section-table-2:nth-child(7)>tbody>tr:last-child>td:last-child {
+.section-content-right-4>div:nth-child(3)>.section-table-2>tbody>tr:last-child>td:last-child,.section-content-right-4>div:nth-child(4)>.section-table-2>tbody>tr>td {
     position: relative;
     text-align: left;
 }
